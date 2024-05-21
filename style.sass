@@ -77,6 +77,7 @@ body
         display: block
         margin-top: 40px
         text-align: center
+        margin-bottom: 30px
 
         div
             position: relative
@@ -105,6 +106,327 @@ body
             width: 120px
             margin: auto
 
+
 .art2
     text-align: center
     display: block
+    background-color: rgb(247, 247, 247)
+    padding-top: 10px
+    padding-bottom: 10px
+    text-align: center
+
+    &_card
+        margin: 10%
+        background-color: white
+        padding: 20px
+        border: 1px solid rgb(236, 236, 236)
+        border-radius: 5px
+
+        h2
+            font-family: Raleway
+            font-weight: 500
+            padding-bottom: 30px
+            text-align: left
+
+        h4
+            text-align: left
+            font-weight: 500
+            font-size: 13px
+            padding-bottom: 10px
+            font-family: Open Sans
+
+        &_div
+            position: relative
+            padding-bottom: 20px
+            margin-top: 10px
+            padding-top: 10px
+            max-width: fit-content
+            margin: auto
+            
+
+            &_img1
+                width: 100px
+                position: absolute
+                top: -15px
+                right: -10px
+                z-index: 0
+
+            &_img1--2cnd
+                width: 120px
+                position: absolute
+                z-index: 0
+                top: -4px
+
+            &_img2
+                position: relative
+                width: 200px
+                z-index: 1
+
+            &_img2--2cnd
+                position: relative
+                width: 160px
+                z-index: 1
+
+
+        &_img
+            width: 200px
+            margin-top: 40px
+
+        .aquamarine
+                position: relative
+                background-color: rgb(0, 219, 183)
+                border-radius: 5px
+                margin: -20px
+                margin-top: 20px
+
+.art3
+    text-align: center
+    display: block
+    padding-top: 20px
+    font: Open Sans
+
+    &_title
+        padding-top: 30px
+        font-family: Raleway
+        font-weight: 400
+        font-size: 35px
+        padding-bottom: 10px   
+
+    &_col1
+        width: 45%
+
+        h3
+            font-size: 17px
+
+        &_offer
+            font-size: 11px
+
+
+    &_col2
+        display: inline-block
+        text-align: left
+
+        div
+            display: inline-block
+            vertical-align: middle
+            width: 100%
+            margin-top: 15px
+
+            h4
+                font-weight: 450
+                margin: 0
+                font-size: 13px
+
+                img
+                    margin-right: 10px
+
+    
+    &_box
+        $colorbox: rgb(255, 92, 119)
+        position: relative
+        margin: auto
+        border: 1px solid $colorbox
+        border-radius: 20px
+        padding: 10px
+        padding-bottom: 35px
+        margin-bottom: 50px
+        width: 270px
+
+        h2
+            color: $colorbox
+            font-weight: 350
+            font-size: 45px
+
+        button
+            background-color: $colorbox
+            position: absolute
+            border: none
+            color: white
+            padding: 15px
+            padding-inline: 50px
+            border-radius: 40px
+            right: 70px
+            bottom: -25px
+            font-weight: 700
+
+        &--blue 
+            $colorbox: rgb(92, 168, 255)
+            position: relative
+            margin: auto
+            border: 1px solid $colorbox
+            border-radius: 20px
+            padding: 10px
+            padding-bottom: 35px
+            margin-bottom: 50px
+            width: 270px
+
+            h2
+                color: $colorbox
+                font-weight: 350
+                font-size: 45px
+
+            button
+                background-color: $colorbox
+                position: absolute
+                border: none
+                color: white
+                padding: 15px
+                padding-inline: 50px
+                border-radius: 40px
+                right: 70px
+                bottom: -25px
+                font-weight: 700
+        
+        &--green
+            $colorbox: rgb(123, 224, 177)
+            position: relative
+            margin: auto
+            border: 1px solid $colorbox
+            border-radius: 20px
+            padding: 10px
+            padding-bottom: 35px
+            margin-bottom: 50px
+            width: 270px
+
+            h2
+                color: $colorbox
+                font-weight: 350
+                font-size: 45px
+
+            button
+                background-color: $colorbox
+                position: absolute
+                border: none
+                color: white
+                padding: 15px
+                padding-inline: 50px
+                border-radius: 40px
+                right: 70px
+                bottom: -25px
+                font-weight: 700
+    
+    &_box:hover
+        box-shadow: 0px 5px 10px 1px rgb(255, 157, 173)
+        width: 300px
+        button
+            box-shadow: 0px 5px 10px 1px rgb(255, 157, 173)
+            right: 85px
+
+    &_box--blue:hover 
+        box-shadow: 0px 5px 10px 1px rgb(154, 201, 255)
+        width: 300px
+        button
+            box-shadow: 0px 5px 10px 1px rgb(154, 201, 255)
+            right: 85px
+
+    &_box--green:hover 
+        box-shadow: 0px 5px 10px 1px rgb(148, 218, 185)
+        width: 300px
+        button
+            box-shadow: 0px 5px 10px 1px rgb(148, 218, 185)
+            right: 85px
+
+.art4
+    padding: 25px
+    font-family: Open Sans
+    display: block
+    text-align: center
+    
+    &_div
+        text-align: left
+        max-width: 890px
+        display: inline-block
+
+    &_title
+        font-family: Raleway
+        font-weight: 400
+        font-size: 35px
+        padding-bottom: 5px
+
+    &_subtitle
+        font-weight: 500
+        padding-bottom: 25px
+
+    &_contact
+        padding-left: 35px
+        padding-bottom: 10px
+        padding-top: 10px
+        color: rgb(194, 194, 194)
+        font-weight: 500
+        position: relative
+        
+        img
+            position: absolute
+            left: -1px
+
+    &_form
+        margin-top: 50px
+        text-align: left
+        vertical-align: start
+
+        &_h4
+            color: rgb(1, 178, 243)
+            font-weight: 700
+            font-size: 11px
+            letter-spacing: 5px
+            padding-bottom: 20px
+
+        &_input
+            border: none
+            border-bottom: 2px solid rgb(194, 194, 194)
+            margin-bottom: 40px
+            width: 100%
+
+        &_div
+            position: relative
+            text-align: right
+
+            &_check
+                left: 0
+                transform: scale(2)
+                position: absolute
+                top: 10px
+
+            h4
+                text-align: left
+                padding-left: 30px
+                font-size: 11px
+                font-weight: 500
+                color: rgb(155, 155, 155)
+
+            &_bttn
+                margin-top: 30px
+                margin-bottom: 30px
+                color: white
+                font-weight: 700
+                background-color: rgb(1, 178, 243)
+                padding: 15px
+                border: none
+                border-radius: 30px
+                width: 200px
+                box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2)
+
+footer
+    padding: 20px
+    position: relative
+    box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2)
+
+    h2
+        width: fit-content
+        display: inline-block
+        font-family: Raleway
+        font-weight: 400
+        color: rgb(1, 178, 243)
+    
+    h4
+        font-size: 11px
+        font-weight: 500
+        color: rgb(155, 155, 155)
+
+    div
+        position: absolute
+        right: 20px
+        top: 30px
+
+        img
+            padding-left: 20px

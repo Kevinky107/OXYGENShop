@@ -81,6 +81,7 @@ body {
   display: block;
   margin-top: 40px;
   text-align: center;
+  margin-bottom: 30px;
 }
 .art1_div2 div {
   position: relative;
@@ -113,4 +114,325 @@ body {
 .art2 {
   text-align: center;
   display: block;
+  background-color: rgb(247, 247, 247);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.art2_card {
+  margin: 10%;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid rgb(236, 236, 236);
+  border-radius: 5px;
+}
+.art2_card h2 {
+  font-family: Raleway;
+  font-weight: 500;
+  padding-bottom: 30px;
+  text-align: left;
+}
+.art2_card h4 {
+  text-align: left;
+  font-weight: 500;
+  font-size: 13px;
+  padding-bottom: 10px;
+  font-family: Open Sans;
+}
+.art2_card_div {
+  position: relative;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  margin: auto;
+}
+.art2_card_div_img1 {
+  width: 100px;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  z-index: 0;
+}
+.art2_card_div_img1--2cnd {
+  width: 120px;
+  position: absolute;
+  z-index: 0;
+  top: -4px;
+}
+.art2_card_div_img2 {
+  position: relative;
+  width: 200px;
+  z-index: 1;
+}
+.art2_card_div_img2--2cnd {
+  position: relative;
+  width: 160px;
+  z-index: 1;
+}
+.art2_card_img {
+  width: 200px;
+  margin-top: 40px;
+}
+.art2_card .aquamarine {
+  position: relative;
+  background-color: rgb(0, 219, 183);
+  border-radius: 5px;
+  margin: -20px;
+  margin-top: 20px;
+}
+
+.art3 {
+  text-align: center;
+  display: block;
+  padding-top: 20px;
+  font: Open Sans;
+}
+.art3_title {
+  padding-top: 30px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.art3_col1 {
+  width: 45%;
+}
+.art3_col1 h3 {
+  font-size: 17px;
+}
+.art3_col1_offer {
+  font-size: 11px;
+}
+.art3_col2 {
+  display: inline-block;
+  text-align: left;
+}
+.art3_col2 div {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-top: 15px;
+}
+.art3_col2 div h4 {
+  font-weight: 450;
+  margin: 0;
+  font-size: 13px;
+}
+.art3_col2 div h4 img {
+  margin-right: 10px;
+}
+.art3_box {
+  position: relative;
+  margin: auto;
+  border: 1px solid rgb(255, 92, 119);
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  width: 270px;
+}
+.art3_box h2 {
+  color: rgb(255, 92, 119);
+  font-weight: 350;
+  font-size: 45px;
+}
+.art3_box button {
+  background-color: rgb(255, 92, 119);
+  position: absolute;
+  border: none;
+  color: white;
+  padding: 15px;
+  padding-inline: 50px;
+  border-radius: 40px;
+  right: 70px;
+  bottom: -25px;
+  font-weight: 700;
+}
+.art3_box--blue {
+  position: relative;
+  margin: auto;
+  border: 1px solid rgb(92, 168, 255);
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  width: 270px;
+}
+.art3_box--blue h2 {
+  color: rgb(92, 168, 255);
+  font-weight: 350;
+  font-size: 45px;
+}
+.art3_box--blue button {
+  background-color: rgb(92, 168, 255);
+  position: absolute;
+  border: none;
+  color: white;
+  padding: 15px;
+  padding-inline: 50px;
+  border-radius: 40px;
+  right: 70px;
+  bottom: -25px;
+  font-weight: 700;
+}
+.art3_box--green {
+  position: relative;
+  margin: auto;
+  border: 1px solid rgb(123, 224, 177);
+  border-radius: 20px;
+  padding: 10px;
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  width: 270px;
+}
+.art3_box--green h2 {
+  color: rgb(123, 224, 177);
+  font-weight: 350;
+  font-size: 45px;
+}
+.art3_box--green button {
+  background-color: rgb(123, 224, 177);
+  position: absolute;
+  border: none;
+  color: white;
+  padding: 15px;
+  padding-inline: 50px;
+  border-radius: 40px;
+  right: 70px;
+  bottom: -25px;
+  font-weight: 700;
+}
+.art3_box:hover {
+  box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
+  width: 300px;
+}
+.art3_box:hover button {
+  box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
+  right: 85px;
+}
+.art3_box--blue:hover {
+  box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
+  width: 300px;
+}
+.art3_box--blue:hover button {
+  box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
+  right: 85px;
+}
+.art3_box--green:hover {
+  box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
+  width: 300px;
+}
+.art3_box--green:hover button {
+  box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
+  right: 85px;
+}
+
+.art4 {
+  padding: 25px;
+  font-family: Open Sans;
+  display: block;
+  text-align: center;
+}
+.art4_div {
+  text-align: left;
+  max-width: 890px;
+  display: inline-block;
+}
+.art4_title {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 35px;
+  padding-bottom: 5px;
+}
+.art4_subtitle {
+  font-weight: 500;
+  padding-bottom: 25px;
+}
+.art4_contact {
+  padding-left: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: rgb(194, 194, 194);
+  font-weight: 500;
+  position: relative;
+}
+.art4_contact img {
+  position: absolute;
+  left: -1px;
+}
+.art4_form {
+  margin-top: 50px;
+  text-align: left;
+  vertical-align: start;
+}
+.art4_form_h4 {
+  color: rgb(1, 178, 243);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 5px;
+  padding-bottom: 20px;
+}
+.art4_form_input {
+  border: none;
+  border-bottom: 2px solid rgb(194, 194, 194);
+  margin-bottom: 40px;
+  width: 100%;
+}
+.art4_form_div {
+  position: relative;
+  text-align: right;
+}
+.art4_form_div_check {
+  left: 0;
+  transform: scale(2);
+  position: absolute;
+  top: 10px;
+}
+.art4_form_div h4 {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+.art4_form_div_bttn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  font-weight: 700;
+  background-color: rgb(1, 178, 243);
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  width: 200px;
+  box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
+}
+
+footer {
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+footer h2 {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inline-block;
+  font-family: Raleway;
+  font-weight: 400;
+  color: rgb(1, 178, 243);
+}
+footer h4 {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgb(155, 155, 155);
+}
+footer div {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+footer div img {
+  padding-left: 20px;
 }/*# sourceMappingURL=style.css.map */
