@@ -15,6 +15,7 @@
   font-family: Raleway;
   font-weight: 400;
   color: rgb(1, 178, 243);
+  font-size: 1.4rem;
 }
 .header_img {
   position: absolute;
@@ -25,33 +26,35 @@
 .us {
   text-align: center;
   display: block;
+  margin-bottom: 3em;
 }
 .us__sell {
-  padding-inline: 40px;
+  padding-inline: 6em;
 }
 .us__sell__h2 {
   font-family: Raleway;
   font-weight: 500;
-  padding-bottom: 15px;
+  padding-bottom: 0.5em;
+  font-size: 2em;
 }
 .us__sell__h4 {
   font-weight: 500;
-  font-size: 13px;
-  padding-bottom: 30px;
+  font-size: 0.8em;
+  padding-bottom: 1.6em;
 }
 .us__sell button {
   color: white;
   font-weight: 700;
   background-color: rgb(1, 178, 243);
-  padding: 15px;
+  padding: 1em;
   border: none;
-  border-radius: 30px;
+  border-radius: 3em;
   width: 100%;
-  max-width: 350px;
+  max-width: 30em;
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
 .us__img {
-  margin-top: 20px;
+  margin-top: 0.5em;
   margin-left: -50%;
   width: 200%;
 }
@@ -60,43 +63,41 @@
   overflow: hidden;
 }
 .us__h2 {
-  margin-top: 10px;
+  margin-top: 1em;
   font-family: Raleway;
   font-weight: 300;
-  font-size: 30px;
-  padding-inline: 30px;
+  font-size: 2rem;
+  padding-inline: 1em;
 }
 .us__daily {
-  display: block;
-  margin-top: 40px;
+  display: inline-block;
+  margin-top: 2em;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 .us__daily div {
+  display: inline-block;
   position: relative;
-  padding-top: 30px;
-  text-align: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
+  padding-top: 2em;
+  vertical-align: top;
+  margin-inline: 4em;
 }
 .us__daily__img {
   position: absolute;
-  right: 13px;
+  right: 0.8em;
 }
 .us__daily #eye {
-  padding-left: 10px;
-  padding-top: 13px;
+  padding-top: 0.8em;
 }
 .us__daily h3 {
   font-family: Raleway;
-  padding-top: 10px;
+  padding-top: 0.9em;
 }
 .us__daily h4 {
-  padding-top: 20px;
+  padding-top: 1.4em;
   font-family: Raleway;
   font-weight: 300;
-  width: 120px;
+  width: 8em;
   margin: auto;
 }
 
@@ -109,97 +110,104 @@
   text-align: center;
 }
 .benefits__card {
-  margin: 10%;
+  margin: auto;
+  margin-bottom: 2.5em;
+  margin-top: 2.5em;
   background-color: white;
-  padding: 20px;
+  padding: 1.5em;
   border: 1px solid rgb(236, 236, 236);
-  border-radius: 5px;
+  border-radius: 0.5em;
+  max-width: 35em;
+  width: 80%;
 }
 .benefits__card h2 {
   font-family: Raleway;
   font-weight: 500;
-  padding-bottom: 30px;
+  padding-bottom: 1em;
   text-align: left;
 }
 .benefits__card h4 {
   text-align: left;
   font-weight: 500;
-  font-size: 13px;
-  padding-bottom: 10px;
+  font-size: 0.8em;
+  padding-bottom: 0.5em;
   font-family: Open Sans;
 }
 .benefits__card__images {
   position: relative;
-  padding-bottom: 20px;
-  margin-top: 10px;
-  padding-top: 10px;
+  padding-bottom: 1.2em;
+  margin-top: 1em;
+  padding-top: 1em;
   max-width: -moz-fit-content;
   max-width: fit-content;
   margin: auto;
 }
 .benefits__card__images__redbg {
-  width: 100px;
+  width: 8em;
   position: absolute;
-  top: -15px;
-  right: -10px;
+  top: -1.1em;
+  right: -1.5em;
   z-index: 0;
 }
 .benefits__card__images__bluebg {
-  width: 120px;
+  width: 9em;
   position: absolute;
   z-index: 0;
-  top: -4px;
+  top: -0.3em;
 }
 .benefits__card__images__laptop {
   position: relative;
-  width: 200px;
+  width: 12em;
   z-index: 1;
 }
 .benefits__card__images__phone {
   position: relative;
-  width: 160px;
+  width: 12em;
   z-index: 1;
 }
 .benefits__card__img {
-  width: 200px;
-  margin-top: 40px;
+  width: 14em;
+  margin-top: 4em;
 }
 .benefits__card .aquamarine {
   position: relative;
   background-color: rgb(0, 219, 183);
-  border-radius: 5px;
-  margin: -20px;
+  border-radius: 0.3em;
+  margin: -1.5em;
   margin-top: 20px;
 }
 
 .pricing {
   text-align: center;
   display: block;
-  padding-top: 20px;
+  padding-top: 1.7em;
   font: Open Sans;
 }
 .pricing__title {
-  padding-top: 30px;
+  padding-top: 1.5em;
   font-family: Raleway;
   font-weight: 400;
-  font-size: 35px;
-  padding-bottom: 10px;
+  font-size: 2em;
+  padding-bottom: 0.9em;
+  width: 3em;
+  margin-inline: auto;
 }
 .pricing__col1 {
-  width: 120px;
   display: inline-block;
   vertical-align: top;
-  padding-right: 20px;
   text-align: center;
+  width: 5.5em;
+  margin-right: 11%;
+  margin-top: 2.7em;
 }
 .pricing__col1__centrar {
-  margin-top: 50%;
+  text-align: center;
 }
 .pricing__col1 h3 {
-  font-size: 17px;
+  font-size: 1.1em;
 }
 .pricing__col1__offer {
-  font-size: 11px;
+  font-size: 0.7em;
 }
 .pricing__col2 {
   display: inline-block;
@@ -209,48 +217,48 @@
 }
 .pricing__col2 div {
   width: 100%;
-  margin-top: 15px;
+  margin-top: 1em;
   width: -moz-fit-content;
   width: fit-content;
 }
 .pricing__col2 div h4 {
   font-weight: 450;
   margin: 0;
-  font-size: 13px;
+  font-size: 0.7em;
   width: -moz-fit-content;
   width: fit-content;
 }
 .pricing__col2 div h4 img {
-  margin-right: 10px;
+  margin-right: 0.8em;
 }
 .pricing__box {
   display: block;
   position: relative;
   margin: auto;
   border: 1px solid rgb(255, 92, 119);
-  border-radius: 20px;
-  padding: 10px;
-  padding-bottom: 35px;
-  margin-bottom: 50px;
+  border-radius: 1em;
+  padding: 0.7em;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   width: 86%;
-  max-width: 350px;
+  max-width: 24em;
 }
 .pricing__box h2 {
   color: rgb(255, 92, 119);
   font-weight: 350;
-  font-size: 45px;
+  font-size: 3em;
 }
 .pricing__box button {
   background-color: rgb(255, 92, 119);
   position: absolute;
   border: none;
   color: white;
-  padding: 15px;
-  padding-inline: 50px;
-  border-radius: 40px;
+  padding: 1em;
+  padding-inline: 2em;
+  border-radius: 3em;
   right: 25%;
   left: 25%;
-  bottom: -25px;
+  bottom: -1.7em;
   font-weight: 700;
 }
 .pricing__box--blue {
@@ -258,29 +266,29 @@
   position: relative;
   margin: auto;
   border: 1px solid rgb(92, 168, 255);
-  border-radius: 20px;
-  padding: 10px;
-  padding-bottom: 35px;
-  margin-bottom: 50px;
+  border-radius: 1em;
+  padding: 0.7em;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   width: 86%;
-  max-width: 350px;
+  max-width: 24em;
 }
 .pricing__box--blue h2 {
   color: rgb(92, 168, 255);
   font-weight: 350;
-  font-size: 45px;
+  font-size: 3em;
 }
 .pricing__box--blue button {
   background-color: rgb(92, 168, 255);
   position: absolute;
   border: none;
   color: white;
-  padding: 15px;
-  padding-inline: 50px;
-  border-radius: 40px;
+  padding: 1em;
+  padding-inline: 2em;
+  border-radius: 3em;
   right: 25%;
   left: 25%;
-  bottom: -25px;
+  bottom: -1.7em;
   font-weight: 700;
 }
 .pricing__box--green {
@@ -288,119 +296,118 @@
   position: relative;
   margin: auto;
   border: 1px solid rgb(123, 224, 177);
-  border-radius: 20px;
-  padding: 10px;
-  padding-bottom: 35px;
-  margin-bottom: 50px;
+  border-radius: 1em;
+  padding: 0.7em;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   width: 86%;
-  max-width: 350px;
+  max-width: 24em;
 }
 .pricing__box--green h2 {
   color: rgb(123, 224, 177);
   font-weight: 350;
-  font-size: 45px;
+  font-size: 3em;
 }
 .pricing__box--green button {
   background-color: rgb(123, 224, 177);
   position: absolute;
   border: none;
   color: white;
-  padding: 15px;
-  padding-inline: 50px;
-  border-radius: 40px;
+  padding: 1em;
+  padding-inline: 2em;
+  border-radius: 3em;
   right: 25%;
   left: 25%;
-  bottom: -25px;
+  bottom: -1.7em;
   font-weight: 700;
 }
 .pricing__box:hover {
   box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
+  max-width: 24.5em;
   width: 90%;
 }
 .pricing__box:hover button {
   box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
-  right: 85px;
 }
 .pricing__box--blue:hover {
   box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
+  max-width: 24.5em;
   width: 90%;
 }
 .pricing__box--blue:hover button {
   box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
-  right: 85px;
 }
 .pricing__box--green:hover {
   box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
+  max-width: 24.5em;
   width: 90%;
 }
 .pricing__box--green:hover button {
   box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
-  right: 85px;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Open Sans;
-}
-
-body {
-  min-width: 320px;
 }
 
 .contact {
-  padding: 25px;
+  padding: 2em;
+  padding-top: 0;
   font-family: Open Sans;
   display: block;
   text-align: center;
 }
 .contact__div {
-  text-align: left;
-  max-width: 890px;
+  text-align: center;
   display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.contact__div div {
+  text-align: left;
+  max-width: 20em;
+  display: inline-block;
+  vertical-align: top;
 }
 .contact__title {
   font-family: Raleway;
   font-weight: 400;
-  font-size: 35px;
-  padding-bottom: 5px;
+  font-size: 2.2em;
+  padding-bottom: 0.2em;
+  padding-top: 1.3em;
+  margin-right: 2em;
 }
 .contact__subtitle {
   font-weight: 500;
-  padding-bottom: 25px;
+  padding-bottom: 2em;
 }
 .contact__info {
-  padding-left: 35px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-left: 2.8em;
+  padding-top: 0.8em;
   color: rgb(194, 194, 194);
   font-weight: 500;
   position: relative;
 }
 .contact__info img {
   position: absolute;
-  left: -1px;
+  left: -0.05em;
 }
 .contact__form {
-  margin-top: 50px;
+  margin-top: 3em;
   text-align: left;
   vertical-align: start;
 }
 .contact__form__h4 {
   color: rgb(1, 178, 243);
   font-weight: 700;
-  font-size: 11px;
-  letter-spacing: 5px;
-  padding-bottom: 20px;
+  font-size: 0.7em;
+  letter-spacing: 0.55em;
+  padding-bottom: 1em;
 }
 .contact__form__input {
   border: none;
   border-bottom: 2px solid rgb(194, 194, 194);
-  margin-bottom: 40px;
+  margin-bottom: 3.5em;
   width: 100%;
 }
 .contact__form__div {
+  width: 100%;
   position: relative;
   text-align: right;
 }
@@ -408,25 +415,29 @@ body {
   left: 0;
   transform: scale(2);
   position: absolute;
-  top: 10px;
+  top: 0.6em;
 }
 .contact__form__div h4 {
   text-align: left;
-  padding-left: 30px;
-  font-size: 11px;
+  padding-left: 3em;
+  font-size: 0.65em;
   font-weight: 500;
   color: rgb(155, 155, 155);
 }
+.contact__form__div #divbtn {
+  width: 100%;
+  text-align: right;
+}
 .contact__form__div__bttn {
-  margin-top: 30px;
-  margin-bottom: 30px;
   color: white;
   font-weight: 700;
   background-color: rgb(1, 178, 243);
-  padding: 15px;
+  margin-top: 1em;
+  padding: 1em;
   border: none;
-  border-radius: 30px;
-  width: 200px;
+  border-radius: 3em;
+  width: 13em;
+  max-width: 30em;
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
 
@@ -455,4 +466,15 @@ footer div {
 }
 footer div img {
   padding-left: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+
+body {
+  min-width: 320px;
 }/*# sourceMappingURL=style.css.map */
