@@ -461,6 +461,9 @@
 }
 
 @media only screen and (min-width: 1000px) {
+  .pricing {
+    height: 37em;
+  }
   #prices {
     display: inline-flex;
     justify-content: center;
@@ -481,17 +484,14 @@
   .pricing__box:hover {
     width: 17em;
     height: 21em;
-    margin-bottom: 3em;
   }
   .pricing__box--blue:hover {
     width: 17em;
     height: 21em;
-    margin-bottom: 3em;
   }
   .pricing__box--green:hover {
     width: 17em;
     height: 21em;
-    margin-bottom: 3em;
   }
 }
 .contact {
