@@ -1,14 +1,3 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Open Sans;
-}
-
-body {
-  min-width: 320px;
-}
-
 .header {
   display: inline-block;
   padding-inline: 20px;
@@ -33,24 +22,24 @@ body {
   top: 20px;
 }
 
-.art1 {
+.us {
   text-align: center;
   display: block;
 }
-.art1_div {
+.us__sell {
   padding-inline: 40px;
 }
-.art1_div_h2 {
+.us__sell__h2 {
   font-family: Raleway;
   font-weight: 500;
   padding-bottom: 15px;
 }
-.art1_div_h4 {
+.us__sell__h4 {
   font-weight: 500;
   font-size: 13px;
   padding-bottom: 30px;
 }
-.art1_div button {
+.us__sell button {
   color: white;
   font-weight: 700;
   background-color: rgb(1, 178, 243);
@@ -61,29 +50,29 @@ body {
   max-width: 350px;
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
-.art1_div--img {
+.us__img {
   margin-top: 20px;
   margin-left: -50%;
   width: 200%;
 }
-.art1_div--img img {
+.us__img img {
   width: 100%;
   overflow: hidden;
 }
-.art1_h2 {
+.us__h2 {
   margin-top: 10px;
   font-family: Raleway;
   font-weight: 300;
   font-size: 30px;
   padding-inline: 30px;
 }
-.art1_div2 {
+.us__daily {
   display: block;
   margin-top: 40px;
   text-align: center;
   margin-bottom: 30px;
 }
-.art1_div2 div {
+.us__daily div {
   position: relative;
   padding-top: 30px;
   text-align: center;
@@ -91,19 +80,19 @@ body {
   width: fit-content;
   margin: auto;
 }
-.art1_div2_img {
+.us__daily__img {
   position: absolute;
   right: 13px;
 }
-.art1_div2 #eye {
+.us__daily #eye {
   padding-left: 10px;
   padding-top: 13px;
 }
-.art1_div2 h3 {
+.us__daily h3 {
   font-family: Raleway;
   padding-top: 10px;
 }
-.art1_div2 h4 {
+.us__daily h4 {
   padding-top: 20px;
   font-family: Raleway;
   font-weight: 300;
@@ -111,7 +100,7 @@ body {
   margin: auto;
 }
 
-.art2 {
+.benefits {
   text-align: center;
   display: block;
   background-color: rgb(247, 247, 247);
@@ -119,27 +108,27 @@ body {
   padding-bottom: 10px;
   text-align: center;
 }
-.art2_card {
+.benefits__card {
   margin: 10%;
   background-color: white;
   padding: 20px;
   border: 1px solid rgb(236, 236, 236);
   border-radius: 5px;
 }
-.art2_card h2 {
+.benefits__card h2 {
   font-family: Raleway;
   font-weight: 500;
   padding-bottom: 30px;
   text-align: left;
 }
-.art2_card h4 {
+.benefits__card h4 {
   text-align: left;
   font-weight: 500;
   font-size: 13px;
   padding-bottom: 10px;
   font-family: Open Sans;
 }
-.art2_card_div {
+.benefits__card__images {
   position: relative;
   padding-bottom: 20px;
   margin-top: 10px;
@@ -148,34 +137,34 @@ body {
   max-width: fit-content;
   margin: auto;
 }
-.art2_card_div_img1 {
+.benefits__card__images__redbg {
   width: 100px;
   position: absolute;
   top: -15px;
   right: -10px;
   z-index: 0;
 }
-.art2_card_div_img1--2cnd {
+.benefits__card__images__bluebg {
   width: 120px;
   position: absolute;
   z-index: 0;
   top: -4px;
 }
-.art2_card_div_img2 {
+.benefits__card__images__laptop {
   position: relative;
   width: 200px;
   z-index: 1;
 }
-.art2_card_div_img2--2cnd {
+.benefits__card__images__phone {
   position: relative;
   width: 160px;
   z-index: 1;
 }
-.art2_card_img {
+.benefits__card__img {
   width: 200px;
   margin-top: 40px;
 }
-.art2_card .aquamarine {
+.benefits__card .aquamarine {
   position: relative;
   background-color: rgb(0, 219, 183);
   border-radius: 5px;
@@ -183,59 +172,59 @@ body {
   margin-top: 20px;
 }
 
-.art3 {
+.pricing {
   text-align: center;
   display: block;
   padding-top: 20px;
   font: Open Sans;
 }
-.art3_title {
+.pricing__title {
   padding-top: 30px;
   font-family: Raleway;
   font-weight: 400;
   font-size: 35px;
   padding-bottom: 10px;
 }
-.art3_col1 {
+.pricing__col1 {
   width: 120px;
   display: inline-block;
   vertical-align: top;
   padding-right: 20px;
   text-align: center;
 }
-.art3_col1_centrar {
+.pricing__col1__centrar {
   margin-top: 50%;
 }
-.art3_col1 h3 {
+.pricing__col1 h3 {
   font-size: 17px;
 }
-.art3_col1_offer {
+.pricing__col1__offer {
   font-size: 11px;
 }
-.art3_col2 {
+.pricing__col2 {
   display: inline-block;
   text-align: center;
   width: -moz-fit-content;
   width: fit-content;
 }
-.art3_col2 div {
+.pricing__col2 div {
   width: 100%;
   margin-top: 15px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.art3_col2 div h4 {
+.pricing__col2 div h4 {
   font-weight: 450;
   margin: 0;
   font-size: 13px;
   width: -moz-fit-content;
   width: fit-content;
 }
-.art3_col2 div h4 img {
+.pricing__col2 div h4 img {
   margin-right: 10px;
 }
-.art3_box {
-  display: inline-block;
+.pricing__box {
+  display: block;
   position: relative;
   margin: auto;
   border: 1px solid rgb(255, 92, 119);
@@ -246,12 +235,12 @@ body {
   width: 86%;
   max-width: 350px;
 }
-.art3_box h2 {
+.pricing__box h2 {
   color: rgb(255, 92, 119);
   font-weight: 350;
   font-size: 45px;
 }
-.art3_box button {
+.pricing__box button {
   background-color: rgb(255, 92, 119);
   position: absolute;
   border: none;
@@ -264,8 +253,8 @@ body {
   bottom: -25px;
   font-weight: 700;
 }
-.art3_box--blue {
-  display: inline-block;
+.pricing__box--blue {
+  display: block;
   position: relative;
   margin: auto;
   border: 1px solid rgb(92, 168, 255);
@@ -276,12 +265,12 @@ body {
   width: 86%;
   max-width: 350px;
 }
-.art3_box--blue h2 {
+.pricing__box--blue h2 {
   color: rgb(92, 168, 255);
   font-weight: 350;
   font-size: 45px;
 }
-.art3_box--blue button {
+.pricing__box--blue button {
   background-color: rgb(92, 168, 255);
   position: absolute;
   border: none;
@@ -294,8 +283,8 @@ body {
   bottom: -25px;
   font-weight: 700;
 }
-.art3_box--green {
-  display: inline-block;
+.pricing__box--green {
+  display: block;
   position: relative;
   margin: auto;
   border: 1px solid rgb(123, 224, 177);
@@ -306,12 +295,12 @@ body {
   width: 86%;
   max-width: 350px;
 }
-.art3_box--green h2 {
+.pricing__box--green h2 {
   color: rgb(123, 224, 177);
   font-weight: 350;
   font-size: 45px;
 }
-.art3_box--green button {
+.pricing__box--green button {
   background-color: rgb(123, 224, 177);
   position: absolute;
   border: none;
@@ -324,53 +313,64 @@ body {
   bottom: -25px;
   font-weight: 700;
 }
-.art3_box:hover {
+.pricing__box:hover {
   box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
   width: 90%;
 }
-.art3_box:hover button {
+.pricing__box:hover button {
   box-shadow: 0px 5px 10px 1px rgb(255, 157, 173);
   right: 85px;
 }
-.art3_box--blue:hover {
+.pricing__box--blue:hover {
   box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
   width: 90%;
 }
-.art3_box--blue:hover button {
+.pricing__box--blue:hover button {
   box-shadow: 0px 5px 10px 1px rgb(154, 201, 255);
   right: 85px;
 }
-.art3_box--green:hover {
+.pricing__box--green:hover {
   box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
   width: 90%;
 }
-.art3_box--green:hover button {
+.pricing__box--green:hover button {
   box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
   right: 85px;
 }
 
-.art4 {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Open Sans;
+}
+
+body {
+  min-width: 320px;
+}
+
+.contact {
   padding: 25px;
   font-family: Open Sans;
   display: block;
   text-align: center;
 }
-.art4_div {
+.contact__div {
   text-align: left;
   max-width: 890px;
   display: inline-block;
 }
-.art4_title {
+.contact__title {
   font-family: Raleway;
   font-weight: 400;
   font-size: 35px;
   padding-bottom: 5px;
 }
-.art4_subtitle {
+.contact__subtitle {
   font-weight: 500;
   padding-bottom: 25px;
 }
-.art4_contact {
+.contact__info {
   padding-left: 35px;
   padding-bottom: 10px;
   padding-top: 10px;
@@ -378,46 +378,46 @@ body {
   font-weight: 500;
   position: relative;
 }
-.art4_contact img {
+.contact__info img {
   position: absolute;
   left: -1px;
 }
-.art4_form {
+.contact__form {
   margin-top: 50px;
   text-align: left;
   vertical-align: start;
 }
-.art4_form_h4 {
+.contact__form__h4 {
   color: rgb(1, 178, 243);
   font-weight: 700;
   font-size: 11px;
   letter-spacing: 5px;
   padding-bottom: 20px;
 }
-.art4_form_input {
+.contact__form__input {
   border: none;
   border-bottom: 2px solid rgb(194, 194, 194);
   margin-bottom: 40px;
   width: 100%;
 }
-.art4_form_div {
+.contact__form__div {
   position: relative;
   text-align: right;
 }
-.art4_form_div_check {
+.contact__form__div__check {
   left: 0;
   transform: scale(2);
   position: absolute;
   top: 10px;
 }
-.art4_form_div h4 {
+.contact__form__div h4 {
   text-align: left;
   padding-left: 30px;
   font-size: 11px;
   font-weight: 500;
   color: rgb(155, 155, 155);
 }
-.art4_form_div_bttn {
+.contact__form__div__bttn {
   margin-top: 30px;
   margin-bottom: 30px;
   color: white;

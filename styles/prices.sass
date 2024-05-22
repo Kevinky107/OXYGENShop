@@ -1,0 +1,167 @@
+.pricing
+    text-align: center
+    display: block
+    padding-top: 20px
+    font: Open Sans
+
+    &__title
+        padding-top: 30px
+        font-family: Raleway
+        font-weight: 400
+        font-size: 35px
+        padding-bottom: 10px   
+
+    &__col1
+        width: 120px
+        display: inline-block
+        vertical-align: top
+        padding-right: 20px
+        text-align: center
+
+        &__centrar
+            margin-top: 50%
+
+        h3
+            font-size: 17px
+
+        &__offer
+            font-size: 11px
+
+
+
+    &__col2
+        display: inline-block
+        text-align: center
+        width: fit-content
+
+        div
+            width: 100%
+            margin-top: 15px
+            width: fit-content
+
+            h4
+                font-weight: 450
+                margin: 0
+                font-size: 13px
+                width: fit-content
+
+                img
+                    margin-right: 10px
+
+    
+    &__box
+        $colorbox: rgb(255, 92, 119)
+        display: block
+        position: relative
+        margin: auto
+        border: 1px solid $colorbox
+        border-radius: 20px
+        padding: 10px
+        padding-bottom: 35px
+        margin-bottom: 50px
+        width: 86%
+        max-width: 350px
+
+        h2
+            color: $colorbox
+            font-weight: 350
+            font-size: 45px
+
+        button
+            background-color: $colorbox
+            position: absolute
+            border: none
+            color: white
+            padding: 15px
+            padding-inline: 50px
+            border-radius: 40px
+            right: 25%
+            left: 25%
+            bottom: -25px
+            font-weight: 700
+
+        &--blue 
+            $colorbox: rgb(92, 168, 255)
+            display: block
+            position: relative
+            margin: auto
+            border: 1px solid $colorbox
+            border-radius: 20px
+            padding: 10px
+            padding-bottom: 35px
+            margin-bottom: 50px
+            width: 86%
+            max-width: 350px
+
+            h2
+                color: $colorbox
+                font-weight: 350
+                font-size: 45px
+
+            button
+                background-color: $colorbox
+                position: absolute
+                border: none
+                color: white
+                padding: 15px
+                padding-inline: 50px
+                border-radius: 40px
+                right: 25%
+                left: 25%
+                bottom: -25px
+                font-weight: 700
+        
+        &--green
+            $colorbox: rgb(123, 224, 177)
+            display: block
+            position: relative
+            margin: auto
+            border: 1px solid $colorbox
+            border-radius: 20px
+            padding: 10px
+            padding-bottom: 35px
+            margin-bottom: 50px
+            width: 86%
+            max-width: 350px
+
+            h2
+                color: $colorbox
+                font-weight: 350
+                font-size: 45px
+
+            button
+                background-color: $colorbox
+                position: absolute
+                border: none
+                color: white
+                padding: 15px
+                padding-inline: 50px
+                border-radius: 40px
+                right: 25%
+                left: 25%
+                bottom: -25px
+                font-weight: 700
+    
+    &__box:hover
+        $color: rgb(255, 157, 173)
+        box-shadow: 0px 5px 10px 1px $color
+        width: 90%
+        button
+            box-shadow: 0px 5px 10px 1px $color
+            right: 85px
+
+    &__box--blue:hover 
+        $color: rgb(154, 201, 255)
+        box-shadow: 0px 5px 10px 1px $color
+        width: 90%
+        button
+            box-shadow: 0px 5px 10px 1px $color
+            right: 85px
+
+    &__box--green:hover 
+        $color: rgb(148, 218, 185)
+        box-shadow: 0px 5px 10px 1px $color
+        width: 90%
+        button
+            box-shadow: 0px 5px 10px 1px $color
+            right: 85px
