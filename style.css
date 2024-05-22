@@ -54,16 +54,28 @@
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
 .us__img {
-  margin-top: 0.5em;
-  margin-left: -50%;
-  width: 200%;
-}
-.us__img img {
+  display: block;
   width: 100%;
-  overflow: hidden;
+}
+.us__img__small {
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .us__img__small {
+    display: none;
+  }
+}
+.us__img__big {
+  width: 100%;
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .us__img__big {
+    display: block;
+  }
 }
 .us__h2 {
-  margin-top: 1em;
+  margin-top: 0.2em;
   font-family: Raleway;
   font-weight: 300;
   font-size: 2rem;
@@ -84,7 +96,7 @@
 }
 .us__daily__img {
   position: absolute;
-  right: 0.8em;
+  right: 1em;
 }
 .us__daily #eye {
   padding-top: 0.8em;
@@ -105,11 +117,11 @@
   text-align: center;
   display: block;
   background-color: rgb(247, 247, 247);
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2em;
+  padding-bottom: 2em;
   text-align: center;
 }
-.benefits__card {
+.benefits__card, .benefits__card--red, .benefits__card--aquamarine {
   margin: auto;
   margin-bottom: 2.5em;
   margin-top: 2.5em;
@@ -120,20 +132,20 @@
   max-width: 35em;
   width: 80%;
 }
-.benefits__card h2 {
+.benefits__card h2, .benefits__card--red h2, .benefits__card--aquamarine h2 {
   font-family: Raleway;
   font-weight: 500;
   padding-bottom: 1em;
   text-align: left;
 }
-.benefits__card h4 {
+.benefits__card h4, .benefits__card--red h4, .benefits__card--aquamarine h4 {
   text-align: left;
   font-weight: 500;
   font-size: 0.8em;
   padding-bottom: 0.5em;
   font-family: Open Sans;
 }
-.benefits__card__images {
+.benefits__card__images, .benefits__card--red__images, .benefits__card--aquamarine__images {
   position: relative;
   padding-bottom: 1.2em;
   margin-top: 1em;
@@ -142,34 +154,34 @@
   max-width: fit-content;
   margin: auto;
 }
-.benefits__card__images__redbg {
+.benefits__card__images__redbg, .benefits__card--red__images__redbg, .benefits__card--aquamarine__images__redbg {
   width: 8em;
   position: absolute;
   top: -1.1em;
   right: -1.5em;
   z-index: 0;
 }
-.benefits__card__images__bluebg {
+.benefits__card__images__bluebg, .benefits__card--red__images__bluebg, .benefits__card--aquamarine__images__bluebg {
   width: 9em;
   position: absolute;
   z-index: 0;
   top: -0.3em;
 }
-.benefits__card__images__laptop {
+.benefits__card__images__laptop, .benefits__card--red__images__laptop, .benefits__card--aquamarine__images__laptop {
   position: relative;
   width: 12em;
   z-index: 1;
 }
-.benefits__card__images__phone {
+.benefits__card__images__phone, .benefits__card--red__images__phone, .benefits__card--aquamarine__images__phone {
   position: relative;
   width: 12em;
   z-index: 1;
 }
-.benefits__card__img {
+.benefits__card__img, .benefits__card--red__img, .benefits__card--aquamarine__img {
   width: 14em;
   margin-top: 4em;
 }
-.benefits__card .aquamarine {
+.benefits__card .aquamarine, .benefits__card--red .aquamarine, .benefits__card--aquamarine .aquamarine {
   position: relative;
   background-color: rgb(0, 219, 183);
   border-radius: 0.3em;
@@ -177,6 +189,108 @@
   margin-top: 20px;
 }
 
+.aquahidden {
+  background-color: rgb(0, 219, 183);
+  border-radius: 0.3em;
+  width: 10em;
+  height: 20em;
+  display: none;
+}
+
+#hidden {
+  margin: 7em;
+  display: flex;
+  align-items: center;
+  width: 11em;
+  height: 11em;
+}
+
+@media only screen and (min-width: 1000px) {
+  .benefits {
+    display: flexbox;
+    padding: 2em;
+    padding-top: 4em;
+    padding-bottom: 7em;
+  }
+  .benefits__card {
+    padding: 3em;
+    max-width: 65em;
+    width: 80%;
+    display: flex;
+    height: 20em;
+    align-items: center;
+  }
+  .benefits__card h4 {
+    padding-bottom: 4em;
+    border-bottom: 3px solid rgb(92, 168, 255);
+  }
+  .benefits__card__images__redbg {
+    width: 15em;
+    top: -1.7em;
+    right: 0;
+  }
+  .benefits__card__images__bluebg {
+    width: 15em;
+    left: 3em;
+  }
+  .benefits__card__images__laptop {
+    margin-top: 2em;
+    width: 20em;
+    margin-right: 2em;
+    margin-left: 9em;
+  }
+  .benefits__card__images__phone {
+    margin-left: 3em;
+    width: 20em;
+    margin-right: 9em;
+  }
+  .benefits__card--red {
+    align-items: center;
+    padding: 3em;
+    max-width: 65em;
+    width: 80%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 20em;
+  }
+  .benefits__card--red h4 {
+    padding-bottom: 4em;
+    border-bottom: 3px solid rgb(255, 92, 119);
+  }
+  .benefits #lastCard {
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 65em;
+    width: 80%;
+    display: flex;
+    height: 20em;
+  }
+  .benefits__card--aquamarine {
+    align-items: center;
+    margin: 0;
+    margin-right: 2em;
+    max-width: 35em;
+    height: 20em;
+    display: inline-flex;
+    padding: 3em;
+  }
+  .benefits__card--aquamarine h4 {
+    padding-bottom: 4em;
+    border-bottom: 3px solid rgb(123, 224, 177);
+  }
+  .benefits .aquahidden {
+    display: flex;
+    align-content: center;
+    width: 50%;
+  }
+  .benefits .aquamarine {
+    display: none;
+  }
+  .benefits__img {
+    display: none;
+  }
+}
 .pricing {
   text-align: center;
   display: block;
@@ -189,7 +303,7 @@
   font-weight: 400;
   font-size: 2em;
   padding-bottom: 0.9em;
-  width: 3em;
+  width: 100%;
   margin-inline: auto;
 }
 .pricing__col1 {
@@ -346,6 +460,40 @@
   box-shadow: 0px 5px 10px 1px rgb(148, 218, 185);
 }
 
+@media only screen and (min-width: 1000px) {
+  #prices {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .pricing__col1 {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  .pricing__box, .pricing__box--blue, .pricing__box--green {
+    width: 15em;
+    margin: 3em;
+    margin-bottom: 6em;
+    height: 20em;
+  }
+  .pricing__box:hover {
+    width: 17em;
+    height: 21em;
+    margin-bottom: 3em;
+  }
+  .pricing__box--blue:hover {
+    width: 17em;
+    height: 21em;
+    margin-bottom: 3em;
+  }
+  .pricing__box--green:hover {
+    width: 17em;
+    height: 21em;
+    margin-bottom: 3em;
+  }
+}
 .contact {
   padding: 2em;
   padding-top: 0;

@@ -29,16 +29,26 @@
             box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2)
 
     &__img
-        margin-top: 0.5em
-        margin-left: -50%
-        width: 200%
+        display: block
+        width: 100%
         
-        img
+        &__small
             width: 100%
-            overflow: hidden
+
+        @media only screen and (min-width: 1000px)
+            &__small
+                display: none
+
+        &__big
+            width: 100%
+            display: none
+
+        @media only screen and (min-width: 1000px)
+            &__big
+                display: block
 
     &__h2
-        margin-top: 1em
+        margin-top: 0.2em
         font-family: Raleway
         font-weight: 300
         font-size: 2rem
@@ -59,7 +69,7 @@
         
         &__img
             position: absolute
-            right: 0.8em
+            right: 1em
             
         
         #eye

@@ -10,7 +10,7 @@
         font-weight: 400
         font-size: 2em
         padding-bottom: 0.9em 
-        width: 3em
+        width: 100%
         margin-inline: auto
 
     &__col1
@@ -168,3 +168,37 @@
         width: 90%
         button
             box-shadow: 0px 5px 10px 1px $color
+
+@media only screen and (min-width: 1000px)
+
+    #prices
+        display: inline-flex
+        justify-content: center
+        align-items: center
+        width: 100%
+
+    .pricing__col1
+        text-align: center
+        margin: auto
+        display: block
+
+    .pricing__box, .pricing__box--blue, .pricing__box--green
+        width: 15em
+        margin: 3em
+        margin-bottom: 6em
+        height: 20em
+
+    .pricing__box:hover
+        width: 17em
+        height: 21em
+        margin-bottom: 3em
+        
+    .pricing__box--blue:hover 
+        width: 17em
+        height: 21em
+        margin-bottom: 3em
+
+    .pricing__box--green:hover
+        width: 17em
+        height: 21em
+        margin-bottom: 3em
