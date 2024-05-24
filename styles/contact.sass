@@ -63,11 +63,41 @@
             position: relative
             text-align: right
 
-            &__check
+            #checkbox-container
                 left: 0
-                transform: scale(2)
+                top: 0.1em
                 position: absolute
-                top: 0.6em
+
+            &__check
+                -webkit-appearance: none
+                appearance: none
+                background-color: #fff
+                margin: 0
+
+                font: inherit
+                width: 1.15em
+                height: 1.15em
+                border: 0.1em solid rgb(202, 202, 202)
+                border-radius: 0.15em
+
+                display: grid
+                place-content: center
+
+            &__check:hover
+                cursor: pointer
+                background-color: #f1f1f1
+
+            &__check::before
+                content: ""
+                width: 0.65em
+                height: 0.65em
+                transform: scale(0)
+                box-shadow: inset 1em 1em rgb(92, 168, 255)
+
+            &__check:checked::before
+                transform: scale(1)
+                transform-origin: bottom left
+                clip-path: polygon(20% 50%, 12% 60%, 40% 100%, 93% 18%, 85% 10%, 40% 80%)
 
             h4
                 text-align: left
