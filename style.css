@@ -1,8 +1,8 @@
 .header {
   display: inline-block;
   padding-inline: 1em;
-  padding-bottom: 0.7em;
-  padding-top: 0.7em;
+  padding-bottom: 1.05em;
+  padding-top: 1.05em;
   width: 100%;
   box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.2);
   margin-bottom: 5em;
@@ -20,14 +20,14 @@
 .header__img {
   position: absolute;
   right: 20px;
-  top: 20px;
+  top: 25px;
 }
 .header__ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
   list-style-type: none;
-  margin-right: 6%;
+  margin-right: 4%;
   width: 100%;
   display: none;
   font-family: Open Sans;
@@ -35,7 +35,6 @@
   font-weight: 600;
 }
 .header__ul li {
-  float: right;
   padding-inline: 1em;
 }
 .header__ul li a {
@@ -43,18 +42,21 @@
   display: block;
   text-decoration: none;
   padding-inline: 1em;
-  padding-bottom: 1.65em;
-  padding-top: 1.65em;
+  padding-bottom: 2.2em;
+  padding-top: 2.2em;
   cursor: pointer;
   color: rgb(192, 192, 192);
 }
 .header__ul li a:hover {
   color: black;
+  padding-bottom: 1.85em;
+  border-bottom: 4px solid rgb(1, 178, 243);
 }
 
 @media only screen and (min-width: 1000px) {
   .header {
-    padding-inline: 4em;
+    padding: 0;
+    padding-inline: 0;
     display: inline-flex;
     align-items: center;
     padding-bottom: 0;
@@ -65,7 +67,7 @@
   }
   .header__h2 {
     padding-left: 0;
-    margin-left: 6%;
+    margin-left: 4%;
     display: inline-flex;
     justify-content: flex-start;
   }
@@ -370,6 +372,7 @@
 }
 .pricing__col1 h3 {
   font-size: 1.1em;
+  font-family: Raleway;
 }
 .pricing__col1__offer {
   font-size: 0.7em;
@@ -402,7 +405,7 @@
   margin: auto;
   border: 1px solid rgb(255, 92, 119);
   border-radius: 1em;
-  padding: 0.7em;
+  padding: 2em;
   padding-bottom: 2em;
   margin-bottom: 4em;
   width: 86%;
@@ -432,7 +435,7 @@
   margin: auto;
   border: 1px solid rgb(92, 168, 255);
   border-radius: 1em;
-  padding: 0.7em;
+  padding: 2em;
   padding-bottom: 2em;
   margin-bottom: 4em;
   width: 86%;
@@ -462,7 +465,7 @@
   margin: auto;
   border: 1px solid rgb(123, 224, 177);
   border-radius: 1em;
-  padding: 0.7em;
+  padding: 2em;
   padding-bottom: 2em;
   margin-bottom: 4em;
   width: 86%;
@@ -527,22 +530,17 @@
     display: block;
   }
   .pricing__box, .pricing__box--blue, .pricing__box--green {
-    width: 15em;
+    width: 17em;
     margin: 3em;
     margin-bottom: 6em;
-    height: 20em;
+    height: 22em;
   }
-  .pricing__box:hover {
-    width: 17em;
-    height: 21em;
+  .pricing__box:hover, .pricing__box--green:hover, .pricing__box--blue:hover {
+    width: 19em;
+    height: 24em;
   }
-  .pricing__box--blue:hover {
-    width: 17em;
-    height: 21em;
-  }
-  .pricing__box--green:hover {
-    width: 17em;
-    height: 21em;
+  .pricing__box:hover .pricing__col2, .pricing__box--green:hover .pricing__col2, .pricing__box--blue:hover .pricing__col2 {
+    padding-top: 2em;
   }
 }
 .contact {
@@ -567,21 +565,23 @@
 .contact__title {
   font-family: Raleway;
   font-weight: 400;
-  font-size: 2.2em;
-  padding-bottom: 0.2em;
+  font-size: 2.6em;
+  padding-bottom: 0.6em;
   padding-top: 1.3em;
-  margin-right: 2em;
+  margin-right: 4.1em;
 }
 .contact__subtitle {
   font-weight: 500;
   padding-bottom: 2em;
 }
 .contact__info {
-  padding-left: 2.8em;
+  padding-left: 2.1em;
   padding-top: 0.8em;
   color: rgb(194, 194, 194);
   font-weight: 500;
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .contact__info img {
   position: absolute;
@@ -646,6 +646,10 @@
   }
   .contact__div div {
     max-width: 30em;
+  }
+  .contact__info {
+    padding-right: 1em;
+    display: inline-flex;
   }
 }
 footer {
