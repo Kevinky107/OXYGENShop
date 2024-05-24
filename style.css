@@ -195,8 +195,13 @@
   text-align: left;
   font-weight: 500;
   font-size: 0.8em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.9em;
   font-family: Open Sans;
+}
+.benefits__card__hr, .benefits__card--red__hr, .benefits__card--aquamarine__hr {
+  display: none;
+  width: 65%;
+  height: 4px;
 }
 .benefits__card__images, .benefits__card--red__images, .benefits__card--aquamarine__images {
   position: relative;
@@ -274,8 +279,13 @@
     align-items: center;
   }
   .benefits__card h4 {
-    padding-bottom: 4em;
-    border-bottom: 3px solid rgb(92, 168, 255);
+    width: 85%;
+    padding-bottom: 2.5em;
+  }
+  .benefits__card__hr {
+    display: block;
+    border: none;
+    background-color: rgb(92, 168, 255);
   }
   .benefits__card__images__redbg {
     width: 15em;
@@ -307,8 +317,13 @@
     height: 20em;
   }
   .benefits__card--red h4 {
-    padding-bottom: 4em;
-    border-bottom: 3px solid rgb(255, 92, 119);
+    width: 85%;
+    padding-bottom: 2.5em;
+  }
+  .benefits__card--red__hr {
+    display: block;
+    border: none;
+    background-color: rgb(255, 92, 119);
   }
   .benefits #lastCard {
     align-items: center;
@@ -329,8 +344,13 @@
     padding: 3em;
   }
   .benefits__card--aquamarine h4 {
-    padding-bottom: 4em;
-    border-bottom: 3px solid rgb(123, 224, 177);
+    width: 85%;
+    padding-bottom: 2.5em;
+  }
+  .benefits__card--aquamarine__hr {
+    display: block;
+    border: none;
+    background-color: rgb(123, 224, 177);
   }
   .benefits .aquahidden {
     display: flex;
@@ -363,9 +383,10 @@
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: 5.5em;
+  width: 6em;
+  height: 6em;
   margin-right: 11%;
-  margin-top: 2.7em;
+  margin-top: 2.3em;
 }
 .pricing__col1__centrar {
   text-align: center;
@@ -531,6 +552,17 @@
   }
   .pricing__col1 {
     text-align: center;
+    width: 100%;
+  }
+  .pricing__col2 {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+  }
+  .pricing__col2 div {
+    text-align: center;
+    margin-inline: auto;
   }
   .pricing__box, .pricing__box--blue, .pricing__box--green {
     width: 17em;
@@ -543,8 +575,8 @@
     width: 19em;
     height: 24em;
   }
-  .pricing__box:hover .pricing__col2, .pricing__box--green:hover .pricing__col2, .pricing__box--blue:hover .pricing__col2 {
-    padding-top: 2em;
+  .pricing__box:hover .pricing__col2 div, .pricing__box--green:hover .pricing__col2 div, .pricing__box--blue:hover .pricing__col2 div {
+    padding-bottom: 0.4em;
   }
 }
 .contact {
@@ -571,7 +603,7 @@
   font-weight: 400;
   font-size: 2.6em;
   padding-bottom: 0.6em;
-  padding-top: 1.3em;
+  padding-top: 1em;
   margin-right: 4.1em;
 }
 .contact__subtitle {
@@ -725,4 +757,8 @@ footer div img {
 
 body {
   min-width: 320px;
+}
+
+button:hover, input[type=submit] {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
