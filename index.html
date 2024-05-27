@@ -12,12 +12,24 @@
             href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300&display=swap"
             rel="stylesheet">
 
+        <script src="script.js" defer></script>
+
         <title>OXYGENShop</title>
     </head>
     <body>
+        <div id="scroller"></div>
+        <button onclick="goTop()" id="floatBtn">↑</button>
         <header id="us" class="header">
             <h2 class="header__h2">OXYGENShop</h2>
-            <img class="header__img" src="resources/Menu.png" alt="menu">
+            <a onclick="changeNav()">
+                <img class="header__img" src="resources/Menu.png" alt="menu" id="burguer">
+            </a>
+            <ul id="nav">
+                <li><a href="#us">WHY US</a></li>
+                <li><a href="#benefits">BENEFITS</a></li>
+                <li><a href="#pricing">PRICES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
             <ul class="header__ul">
                 <li><a href="#us">WHY US</a></li>
                 <li><a href="#benefits">BENEFITS</a></li>

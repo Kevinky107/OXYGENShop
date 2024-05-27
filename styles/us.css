@@ -1,0 +1,89 @@
+.us {
+  text-align: center;
+  display: block;
+  margin-bottom: 3em;
+}
+.us__sell {
+  padding-inline: 6em;
+}
+.us__sell__h2 {
+  font-family: Raleway;
+  font-weight: 500;
+  padding-bottom: 0.5em;
+  font-size: 2em;
+}
+.us__sell__h4 {
+  font-weight: 500;
+  font-size: 0.8em;
+  padding-bottom: 1.6em;
+}
+.us__sell button {
+  color: white;
+  font-weight: 700;
+  background-color: rgb(1, 178, 243);
+  padding: 1em;
+  border: none;
+  border-radius: 3em;
+  width: 100%;
+  max-width: 30em;
+  box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
+}
+.us__img {
+  display: block;
+  width: 100%;
+}
+.us__img__small {
+  width: 100%;
+}
+@media only screen and (min-width: 1000px) {
+  .us__img__small {
+    display: none;
+  }
+}
+.us__img__big {
+  width: 100%;
+  display: none;
+}
+@media only screen and (min-width: 1000px) {
+  .us__img__big {
+    display: block;
+  }
+}
+.us__h2 {
+  margin-top: 0.2em;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-inline: 1em;
+}
+.us__daily {
+  display: inline-block;
+  margin-top: 2em;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.us__daily div {
+  display: inline-block;
+  position: relative;
+  padding-top: 2em;
+  vertical-align: top;
+  margin-inline: 4em;
+}
+.us__daily__img {
+  position: absolute;
+  right: 1em;
+}
+.us__daily #eye {
+  padding-top: 0.8em;
+}
+.us__daily h3 {
+  font-family: Raleway;
+  padding-top: 0.9em;
+}
+.us__daily h4 {
+  padding-top: 1.4em;
+  font-family: Raleway;
+  font-weight: 300;
+  width: 8em;
+  margin: auto;
+}/*# sourceMappingURL=us.css.map */

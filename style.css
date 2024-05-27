@@ -22,6 +22,29 @@
   right: 20px;
   top: 25px;
 }
+.header #nav {
+  display: none;
+  list-style-type: none;
+  margin-top: 2em;
+  font-family: Open Sans;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+}
+.header #nav li {
+  padding-top: 0.9em;
+  padding-bottom: 0.5em;
+  padding-left: 0.4em;
+}
+.header #nav li a {
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  color: rgb(192, 192, 192);
+}
+.header #nav li a:hover {
+  color: black;
+}
 .header__ul {
   margin: 0;
   padding: 0;
@@ -757,8 +780,47 @@ footer div img {
 
 body {
   min-width: 320px;
+  position: relative;
 }
 
 button:hover, input[type=submit] {
   cursor: pointer;
+}
+
+#scroller {
+  position: fixed;
+  height: 0;
+  z-index: 2;
+  height: 0.3em;
+  width: 0%;
+  background-color: rgb(1, 178, 243);
+}
+
+#floatBtn {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  z-index: 2;
+  left: 50%;
+  margin-left: -1.1em;
+  top: 1em;
+  background-color: rgb(1, 178, 243);
+  color: white;
+  font-size: 1em;
+  padding-bottom: 0.4em;
+  padding-inline: 0.61em;
+  border: none;
+  border-radius: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  #floatBtn {
+    left: auto;
+    top: auto;
+    right: 3em;
+    bottom: 3em;
+    font-size: 2em;
+    padding-bottom: 0.4em;
+    padding-inline: 0.61em;
+  }
 }/*# sourceMappingURL=style.css.map */

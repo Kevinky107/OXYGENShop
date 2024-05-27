@@ -8,6 +8,42 @@
 
 body
     min-width: 320px
+    position: relative
 
 button:hover, input[type='submit']
     cursor: pointer
+
+#scroller
+    position: fixed
+    height: 0
+    z-index: 2
+    height: 0.3em
+    width: 0%
+    background-color: rgb(1, 178, 243)
+
+#floatBtn
+    display: none
+    text-decoration: none
+    position: fixed
+    z-index: 2
+    left: 50%
+    margin-left: -1.1em
+    top: 1em
+    background-color: rgb(1, 178, 243)
+    color: white
+    font-size: 1em
+    padding-bottom: 0.4em
+    padding-inline: 0.61em
+    border: none
+    border-radius: 100%
+
+@media only screen and (min-width: 1000px)
+
+    #floatBtn
+        left: auto
+        top: auto
+        right: 3em
+        bottom: 3em
+        font-size: 2em
+        padding-bottom: 0.4em
+        padding-inline: 0.61em
