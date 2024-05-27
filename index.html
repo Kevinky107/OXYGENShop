@@ -130,12 +130,19 @@
             </section>
             <section id="pricing" class="pricing">
                 <h2 class="pricing__title">Pricing</h2>
+                <div id="coinSelector">
+                    <ul>
+                        <li onclick="changeCoin('eur')">EUR</li>
+                        <li onclick="changeCoin('usd')">USD</li>
+                        <li onclick="changeCoin('gbp')">GBP</li>
+                    </ul>
+                </div>
                 <div id="prices">
                     <div class="pricing__box">
                         <div class="pricing__col1">
                             <div class="pricing__col1__centrar">
                                 <h3>Basic</h3>
-                                <h2>$0</h2>
+                                <h2 id="basic">$0</h2>
                                 <h4 class="pricing__col1__offer"></h4>
                             </div>
                         </div>
@@ -162,7 +169,7 @@
                         <div class="pricing__col1">
                             <div class="pricing__col1__centrar">
                                 <h3>Professional</h3>
-                                <h2>$25</h2>
+                                <h2 id="professional">$25</h2>
                                 <h4 class="pricing__col1__offer">Limited offer</h4>
                             </div>
                         </div>
@@ -189,7 +196,7 @@
                         <div class="pricing__col1">
                             <div class="pricing__col1__centrar">
                                 <h3>Premium</h3>
-                                <h2>$60</h2>
+                                <h2 id="premium">$60</h2>
                                 <h4 class="pricing__col1__offer">Limited offer</h4>
                             </div>
                         </div>
@@ -226,14 +233,14 @@
                                 src="resources/Phone Icon.png">616 422 058</h4>
                     </div>
                     <div>
-                        <form class="contact__form" onsubmit>
+                        <form class="contact__form" id="contactForm" onsubmit="validateForm(event)">
                             <h4 class="contact__form__h4">NAME</h4>
-                            <input class="contact__form__input" type="text">
+                            <input class="contact__form__input" id="name" type="text">
                             <h4 class="contact__form__h4">EMAIL</h4>
-                            <input class="contact__form__input" type="email">
+                            <input class="contact__form__input" type="text" id="email">
                             <div class="contact__form__div">
                                 <label id="checkbox-container">
-                                    <input type="checkbox" class="contact__form__div__check">
+                                    <input type="checkbox" class="contact__form__div__check" id="consent">
                                 </label>
                                 <h4>I hereby give consent for my personal data included
                                     in my application to be processed for the purposes
