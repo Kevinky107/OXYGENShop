@@ -19,6 +19,25 @@
     <body>
         <div id="scroller"></div>
         <button onclick="goTop()" id="floatBtn">↑</button>
+        <div id="popUp" class="modal">
+            <div class="modal__content">
+              <img alt="close" src="resources/cross.png" onclick="closeModal()">
+              <h2>Subscribe to our newsletter</h2>
+              <form id="modalForm" class="contact__form" onsubmit="validateForm(event,'modalForm')">
+                <h4 class="contact__form__h4">NAME</h4>
+                <input class="contact__form__input" id="name">
+                <h4 class="contact__form__h4">EMAIL</h4>
+                <input class="contact__form__input" type="text">
+                <div class="contact__form__div">
+                    <label id="checkbox-container">
+                        <input type="checkbox" class="contact__form__div__check">
+                    </label>
+                    <h4 id="modal__content__checkText">I give consent for my personal data to be processed</h4>
+                </div>
+                <input class="contact__form__div__bttn" type="submit" value="Send">
+            </form>
+            </div>
+        </div>
         <header id="us" class="header">
             <h2 class="header__h2">OXYGENShop</h2>
             <a onclick="changeNav()">
@@ -233,7 +252,7 @@
                                 src="resources/Phone Icon.png">616 422 058</h4>
                     </div>
                     <div>
-                        <form class="contact__form" id="contactForm" onsubmit="validateForm(event)">
+                        <form class="contact__form" id="contactForm" onsubmit="validateForm(event,'contactForm')">
                             <h4 class="contact__form__h4">NAME</h4>
                             <input class="contact__form__input" id="name" type="text">
                             <h4 class="contact__form__h4">EMAIL</h4>

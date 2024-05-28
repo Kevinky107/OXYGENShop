@@ -30,7 +30,10 @@ function updateScroll() {
   var scrolled = totalHeight / height;
 
   scroller.style.width = scrolled*100 + "%";
-  showButton(scrolled)
+
+  //functions that take place when you scroll some height
+  showButton(scrolled);
+  popUp(scrolled);
 
 }
 
@@ -56,17 +59,21 @@ function goTop() {
 
 // Form elements
 
-var form = document.getElementById("contactForm");
-var nameForm = document.getElementById("name");
-var emailForm = document.getElementById("email");
-var consentForm = document.getElementById("consent");
+//var nameForm = document.getElementById("name");
+//var emailForm = document.getElementById("email");
+//var consentForm = document.getElementById("consent");
 
 const url = 'https://jsonplaceholder.typicode.com/posts';
-const color = nameForm.style.borderColor;
+const color = "rgb(202, 202, 202)" //default color
 
-function validateForm(e) {
-  
+function validateForm(e, form) {
   e.preventDefault();
+
+  var myForm = document.getElementById(form);
+  var nameForm = myForm.elements[0];
+  var emailForm = myForm.elements[1];
+  var consentForm = myForm.elements[2];
+
   var ok = true;
   const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -98,11 +105,11 @@ function validateForm(e) {
     emailForm.style.borderColor = color;
 
   if(ok)
-    uploadForm();
+    uploadForm(nameForm, emailForm);
 
 }
 
-function uploadForm() {
+function uploadForm(nameForm, emailForm) {
 
   fetch(url, {
     method: 'POST',
@@ -161,4 +168,47 @@ async function changeCoin(money){
       break;
   }
 
+}
+
+
+// MODAL SUBSCRIBE SCRIPT
+
+//modal elements
+
+var modal = document.getElementById("popUp");
+sessionStorage.modal = false;
+
+if(sessionStorage.modal == "false") {
+  setTimeout(() => {
+    popUp(0.25)
+  }, 5000);
+}
+
+//click outside modal (event)
+window.onclick = function(event) {
+  if (event.target == modal) {
+    closeModal();
+  }
+}
+
+//escape pressed (event)
+window.onkeydown = function(event) {
+  if (event.keyCode == 27) {
+    closeModal();
+  }
+}
+
+function popUp(scrolled) {
+
+  if(sessionStorage.modal == "false")
+  {
+    if(scrolled*100 >= 25)
+      modal.style.display = "block";
+  } 
+
+}
+
+function closeModal() {
+  modal.style.display = "none";
+  sessionStorage.modal = "true"
 }
