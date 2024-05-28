@@ -13,6 +13,7 @@
             rel="stylesheet">
 
         <script src="script.js" defer></script>
+        <script src="slider.js" defer></script>
 
         <title>OXYGENShop</title>
     </head>
@@ -22,7 +23,7 @@
         <div id="popUp" class="modal">
             <div class="modal__content">
               <img alt="close" src="resources/cross.png" onclick="closeModal()">
-              <h2>Subscribe to our newsletter</h2>
+              <h2>Subscribe to our Newsletter</h2>
               <form id="modalForm" class="contact__form" onsubmit="validateForm(event,'modalForm')">
                 <h4 class="contact__form__h4">NAME</h4>
                 <input class="contact__form__input" id="name">
@@ -238,6 +239,14 @@
                         </div>
                         <button>Begin</button>
                     </div>
+                </div>
+            </section>
+            <section>
+                <div class="slider" id="images">
+                    <img alt="img1" src="resources/photo1.jpg">
+                    <img alt="img2" src="resources/photo2.jpg">
+                    <img alt="img3" src="resources/photo3.jpg">
+                    <img alt="img4" src="resources/photo4.jpg">
                 </div>
             </section>
             <section id="contact" class="contact">

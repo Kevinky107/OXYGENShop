@@ -1,0 +1,72 @@
+.slider
+    $color: rgba(255, 255, 255, 0.651)
+    $color2: rgba(0, 0, 0, 0.397)
+    display: flex
+    position: relative
+    justify-items: center
+    margin: auto
+    width: 40%
+    margin-top: 5em
+    margin-bottom: 3em
+    box-shadow: 0px 10px 10px 1px rgb(78, 78, 78)
+    text-align: center
+    min-width: 20em
+
+    img
+        width: 100%
+        display: none
+
+    &__leftBtn
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+        left: 1em
+        width: 3em
+        height: 3em
+        border-radius: 100%
+        border: 2px solid $color
+        background-color: $color2
+        color: $color
+        font-weight: 600
+        font-size: 1em
+
+    &__rightBtn
+        position: absolute
+        top: 0
+        bottom: 0
+        margin: auto
+        right: 1em
+        width: 3em
+        height: 3em
+        border-radius: 100%
+        border: 2px solid $color
+        background-color: $color2
+        color: $color
+        font-weight: 800
+        font-weight: 600
+        font-size: 1em
+
+    &__index
+        position: absolute
+        bottom: 1em
+        right: 0
+        left: 0
+        margin: auto
+        width: fit-content
+        border: 2px solid $color
+        background-color: $color2
+        border-radius: 6em
+
+        &__point
+            display: inline-flex
+            align-items: center
+            height: 1.3em
+            padding-inline: 0.2em
+            color: $color
+            font-size: 2em
+
+.selected
+    color: white
+    font-size: 10em
+

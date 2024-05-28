@@ -126,7 +126,7 @@
   border: none;
   border-radius: 3em;
   width: 100%;
-  max-width: 25em;
+  max-width: 30em;
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
 .us__img {
@@ -658,7 +658,7 @@
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .contact__info img {
   position: absolute;
@@ -748,7 +748,8 @@
 @media only screen and (min-width: 1000px) {
   .contact__div {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    margin-top: 3em;
   }
   .contact__div div {
     max-width: 30em;
@@ -786,6 +787,78 @@ footer div {
 }
 footer div img {
   padding-left: 20px;
+}
+
+.slider {
+  display: flex;
+  position: relative;
+  justify-items: center;
+  margin: auto;
+  width: 40%;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  box-shadow: 0px 10px 10px 1px rgb(78, 78, 78);
+  text-align: center;
+  min-width: 20em;
+}
+.slider img {
+  width: 100%;
+  display: none;
+}
+.slider__leftBtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.651);
+  background-color: rgba(0, 0, 0, 0.397);
+  color: rgba(255, 255, 255, 0.651);
+  font-weight: 600;
+  font-size: 1em;
+}
+.slider__rightBtn {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 1em;
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.651);
+  background-color: rgba(0, 0, 0, 0.397);
+  color: rgba(255, 255, 255, 0.651);
+  font-weight: 800;
+  font-weight: 600;
+  font-size: 1em;
+}
+.slider__index {
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 2px solid rgba(255, 255, 255, 0.651);
+  background-color: rgba(0, 0, 0, 0.397);
+  border-radius: 6em;
+}
+.slider__index__point {
+  display: inline-flex;
+  align-items: center;
+  height: 1.3em;
+  padding-inline: 0.2em;
+  color: rgba(255, 255, 255, 0.651);
+  font-size: 20px;
+}
+
+.selected {
+  color: white;
 }
 
 * {
@@ -847,7 +920,9 @@ button:hover, input[type=submit] {
   min-width: 15em;
   margin: auto;
   padding: 2em;
-  margin-top: 7em;
+  margin-top: 10em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 5px 5px rgba(1, 178, 243, 0.2);
 }
 .modal__content h2 {
   color: rgb(31, 31, 31);
@@ -858,6 +933,9 @@ button:hover, input[type=submit] {
   position: absolute;
   right: 1em;
   top: 1em;
+}
+.modal__content img:hover {
+  cursor: pointer;
 }
 .modal__content div {
   display: inline-flex;
