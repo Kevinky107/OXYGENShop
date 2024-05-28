@@ -105,7 +105,7 @@
   margin-bottom: 3em;
 }
 .us__sell {
-  padding-inline: 6em;
+  padding-inline: 4em;
 }
 .us__sell__h2 {
   font-family: Raleway;
@@ -126,7 +126,7 @@
   border: none;
   border-radius: 3em;
   width: 100%;
-  max-width: 30em;
+  max-width: 25em;
   box-shadow: 5px 5px 5px 1px rgba(1, 178, 243, 0.2);
 }
 .us__img {
@@ -629,12 +629,12 @@
 .contact__div {
   text-align: center;
   display: inline-block;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  padding-inline: 10%;
 }
 .contact__div div {
+  width: 100%;
   text-align: left;
-  max-width: 20em;
   display: inline-block;
   vertical-align: top;
 }
@@ -651,22 +651,23 @@
   padding-bottom: 2em;
 }
 .contact__info {
-  padding-left: 2.1em;
+  padding-left: 2.5em;
   padding-top: 0.8em;
   color: rgb(194, 194, 194);
   font-weight: 500;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 0.7rem;
 }
 .contact__info img {
   position: absolute;
-  left: -0.05em;
+  left: -0.15em;
+  top: 0.4em;
 }
 .contact__form {
   margin-top: 3em;
   text-align: left;
-  vertical-align: start;
 }
 .contact__form__h4 {
   color: rgb(1, 178, 243);
@@ -682,9 +683,7 @@
   width: 100%;
 }
 .contact__form__div {
-  width: 100%;
   position: relative;
-  text-align: right;
 }
 .contact__form__div #checkbox-container {
   left: 0;
@@ -749,6 +748,7 @@
 @media only screen and (min-width: 1000px) {
   .contact__div {
     display: inline-flex;
+    justify-content: space-evenly;
   }
   .contact__div div {
     max-width: 30em;
@@ -844,6 +844,7 @@ button:hover, input[type=submit] {
   background-color: rgb(255, 255, 255);
   width: 60%;
   max-width: 40em;
+  min-width: 15em;
   margin: auto;
   padding: 2em;
   margin-top: 7em;

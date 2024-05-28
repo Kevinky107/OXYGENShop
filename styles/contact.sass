@@ -8,11 +8,12 @@
     &__div
         text-align: center
         display: inline-block
-        width: fit-content
+        width: 100%
+        padding-inline: 10%
 
         div
+            width: 100%
             text-align: left
-            max-width: 20em
             display: inline-block
             vertical-align: top
 
@@ -29,21 +30,22 @@
         padding-bottom: 2em
 
     &__info
-        padding-left: 2.1em
+        padding-left: 2.5em
         padding-top: 0.8em
         color: rgb(194, 194, 194)
         font-weight: 500
         position: relative
         width: fit-content
+        font-size: 0.7rem
         
         img
             position: absolute
-            left: -0.05em
+            left: -0.15em
+            top: 0.4em
 
     &__form
         margin-top: 3em
         text-align: left
-        vertical-align: start
 
         &__h4
             color: rgb(1, 178, 243)
@@ -59,9 +61,7 @@
             width: 100%
 
         &__div
-            width: 100%
             position: relative
-            text-align: right
 
             #checkbox-container
                 left: 0
@@ -126,6 +126,7 @@
 
     .contact__div
         display: inline-flex
+        justify-content: space-evenly
 
         div
             max-width: 30em
