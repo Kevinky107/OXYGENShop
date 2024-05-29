@@ -446,10 +446,10 @@
 .pricing__box {
   display: block;
   position: relative;
-  margin: auto;
   border: 1px solid rgb(255, 92, 119);
   border-radius: 1em;
   padding: 1em;
+  margin-inline: auto;
   padding-bottom: 2em;
   margin-bottom: 4em;
   width: 86%;
@@ -476,7 +476,6 @@
 .pricing__box--blue {
   display: block;
   position: relative;
-  margin: auto;
   border: 1px solid rgb(92, 168, 255);
   border-radius: 1em;
   padding: 1em;
@@ -484,6 +483,7 @@
   margin-bottom: 4em;
   width: 86%;
   max-width: 24em;
+  margin-inline: auto;
 }
 .pricing__box--blue h2 {
   color: rgb(92, 168, 255);
@@ -506,7 +506,6 @@
 .pricing__box--green {
   display: block;
   position: relative;
-  margin: auto;
   border: 1px solid rgb(123, 224, 177);
   border-radius: 1em;
   padding: 1em;
@@ -514,6 +513,7 @@
   margin-bottom: 4em;
   width: 86%;
   max-width: 24em;
+  margin-inline: auto;
 }
 .pricing__box--green h2 {
   display: inline-block;
@@ -575,6 +575,11 @@
   border-radius: 10em;
 }
 
+#prices {
+  text-align: center;
+  width: 100%;
+}
+
 @media only screen and (min-width: 1000px) {
   .pricing {
     height: 43em;
@@ -583,6 +588,7 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    height: 30em;
     width: 100%;
   }
   .pricing__col1 {
@@ -614,6 +620,7 @@
   .pricing__box:hover, .pricing__box--green:hover, .pricing__box--blue:hover {
     width: 19em;
     height: 24em;
+    margin-inline: 2em;
   }
   .pricing__box:hover .pricing__col2 div, .pricing__box--green:hover .pricing__col2 div, .pricing__box--blue:hover .pricing__col2 div {
     padding-bottom: 0.4em;

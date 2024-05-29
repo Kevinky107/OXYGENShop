@@ -58,10 +58,10 @@
         $colorbox: rgb(255, 92, 119)
         display: block
         position: relative
-        margin: auto
         border: 1px solid $colorbox
         border-radius: 1em
         padding: 1em
+        margin-inline: auto
         padding-bottom: 2em
         margin-bottom: 4em
         width: 86%
@@ -89,7 +89,6 @@
             $colorbox: rgb(92, 168, 255)
             display: block
             position: relative
-            margin: auto
             border: 1px solid $colorbox
             border-radius: 1em
             padding: 1em
@@ -97,6 +96,7 @@
             margin-bottom: 4em
             width: 86%
             max-width: 24em
+            margin-inline: auto
 
             h2
                 color: $colorbox
@@ -120,7 +120,6 @@
             $colorbox: rgb(123, 224, 177)
             display: block
             position: relative
-            margin: auto
             border: 1px solid $colorbox
             border-radius: 1em
             padding: 1em
@@ -128,6 +127,7 @@
             margin-bottom: 4em
             width: 86%
             max-width: 24em
+            margin-inline: auto
 
             h2
                 display: inline-block
@@ -188,6 +188,10 @@
             background-color: rgb(168, 230, 255)
             border-radius: 10em
 
+#prices
+    text-align: center
+    width: 100%
+
 @media only screen and (min-width: 1000px)
 
     .pricing
@@ -197,6 +201,7 @@
         display: inline-flex
         justify-content: center
         align-items: center
+        height: 30em
         width: 100%
 
     .pricing__col1
@@ -228,6 +233,7 @@
     .pricing__box:hover, .pricing__box--green:hover, .pricing__box--blue:hover
         width: 19em
         height: 24em
+        margin-inline: 2em
 
         .pricing__col2
             div
