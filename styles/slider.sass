@@ -48,6 +48,7 @@
         font-size: 1em
 
     &__index
+        display: inline-flex
         position: absolute
         bottom: 1em
         right: 0
@@ -64,9 +65,12 @@
             height: 1.3em
             padding-inline: 0.2em
             color: $color
-            font-size: 2em
+
+    &__rightBtn:hover, &__leftBtn:hover 
+        $hoverColor: white
+        border: 2px solid $hoverColor
+        color: $hoverColor
 
 .selected
     color: white
-    font-size: 10em
 
