@@ -46,6 +46,12 @@ class Slider {
         this._photos[this._currentPhoto].style.display = "block";
     }
 
+    clickPhoto(i){
+        this.hidePhoto();
+        this._currentPhoto = i;
+        this.showPhoto();
+    }
+
     nextPhoto(){
         this.hidePhoto();
         this._currentPhoto < this._numPhotos-1 ? this._currentPhoto++ : this._currentPhoto = 0;
@@ -74,10 +80,15 @@ rBtn.textContent = "▶";
 const index = images.element.appendChild(document.createElement("div"))
 index.className = "slider__index";
 
-for(var i = 0; i < images._numPhotos; i++) {
+for(let i = 0; i < images._numPhotos; i++) {
     let x = index.appendChild(document.createElement("p"))
     x.className = "slider__index__point";
     x.textContent = "•";
+    x.onclick = function() {
+        index.children[images.currentPhoto].className = "slider__index__point";
+        images.clickPhoto(i)
+        index.children[images.currentPhoto].className = "slider__index__point selected";
+    };
 }
 
 index.children[images.currentPhoto].className = "slider__index__point selected";

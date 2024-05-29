@@ -855,6 +855,7 @@ footer div img {
   height: 1.3em;
   padding-inline: 0.2em;
   color: rgba(255, 255, 255, 0.651);
+  cursor: pointer;
 }
 .slider__rightBtn:hover, .slider__leftBtn:hover {
   border: 2px solid white;
