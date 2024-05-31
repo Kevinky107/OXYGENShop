@@ -22,10 +22,10 @@
     </head>
     <body>
         <div id="scroller"></div>
-        <button onclick="goTop()" id="floatBtn">↑</button>
+        <button id="floatBtn">↑</button>
         <div id="popUp" class="modal">
             <div class="modal__content">
-              <img alt="close" src="resources/cross.png" onclick="closeModal()">
+              <img id="modalCross" alt="close" src="resources/cross.png">
               <h2>Subscribe to our Newsletter</h2>
               <form id="modalForm" class="contact__form">
                 <h4 class="contact__form__h4">NAME</h4>
@@ -44,7 +44,7 @@
         </div>
         <header id="us" class="header">
             <h2 class="header__h2">OXYGENShop</h2>
-            <a onclick="changeNav()">
+            <a id="navMenu">
                 <img class="header__img" src="resources/Menu.png" alt="menu" id="burguer">
             </a>
             <ul id="nav">
@@ -154,10 +154,10 @@
             <section id="pricing" class="pricing">
                 <h2 class="pricing__title">Pricing</h2>
                 <div id="coinSelector">
-                    <ul>
-                        <li onclick="changeCoin('eur')">EUR</li>
-                        <li onclick="changeCoin('usd')">USD</li>
-                        <li onclick="changeCoin('gbp')">GBP</li>
+                    <ul id="coins">
+                        <li>EUR</li>
+                        <li>USD</li>
+                        <li>GBP</li>
                     </ul>
                 </div>
                 <div id="prices">

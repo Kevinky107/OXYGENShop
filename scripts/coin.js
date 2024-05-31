@@ -6,6 +6,8 @@ let basic = document.getElementById("basic");
 let professional = document.getElementById("professional");
 let premium = document.getElementById("premium");
 
+const selectors = document.getElementById("coins").children;
+
 const basicM = 0;
 const professionalM = 25;
 const premiumM = 60;
@@ -20,19 +22,19 @@ async function changeCoin(money){
     let change;
 
     switch(money) {
-      case 'eur':
+      case 'EUR':
         change = coins.usd.eur;
         basic.childNodes.item(0).data = `${parseInt(basicM*change)}€`;
         professional.childNodes.item(0).data = `${parseInt(professionalM*change)}€`;
         premium.childNodes.item(0).data = `${parseInt(premiumM*change)}€`;
         break;
-      case 'usd':
+      case 'USD':
         change = coins.usd.usd;
         basic.childNodes.item(0).data = `$${parseInt(basicM*change)}`;
         professional.childNodes.item(0).data = `$${parseInt(professionalM*change)}`;
         premium.childNodes.item(0).data = `$${parseInt(premiumM*change)}`;
         break;
-      case 'gbp':
+      case 'GBP':
         change = coins.usd.gbp;
         basic.childNodes.item(0).data = `£${parseInt(basicM*change)}`;
         professional.childNodes.item(0).data = `£${parseInt(professionalM*change)}`;
@@ -44,3 +46,8 @@ async function changeCoin(money){
   }
 
 }
+
+for(let i = 0; i < selectors.length; i++){
+  selectors.item(i).addEventListener("click", function(){changeCoin(selectors.item(i).textContent)});
+}
+

@@ -3,6 +3,7 @@
 //modal elements
 
 let modal = document.getElementById("popUp");
+let close = document.getElementById("modalCross");
 
 if(localStorage.modal == null) {
   setTimeout(() => {
@@ -38,3 +39,5 @@ function closeModal() {
   modal.style.display = "none";
   localStorage.modal = "decline"
 }
+
+close.addEventListener("click", function(){closeModal()});

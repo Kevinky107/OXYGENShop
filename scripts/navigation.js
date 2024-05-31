@@ -5,6 +5,7 @@ let nav = document.getElementById("nav");
 let navIcon = document.getElementById("burguer");
 let scroller = document.getElementById("scroller");
 let topBtn = document.getElementById("floatBtn");
+let menuIcon = document.getElementById("navMenu");
 
 // Call to the navigation scroll indicator
 window.addEventListener("scroll", function() {updateScroll()});
@@ -53,3 +54,7 @@ function goTop() {
   }, 200);
   
 }
+
+//EVENT LISTENERS
+navIcon.addEventListener("click", function(){changeNav()});
+topBtn.addEventListener("click", function(){goTop()});
