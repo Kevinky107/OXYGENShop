@@ -8,6 +8,58 @@ class Slider {
         this._currentPhoto = 0;
 
         this.showPhoto();
+
+        const lBtn = this._element.appendChild(document.createElement("button"));
+        const rBtn = this._element.appendChild(document.createElement("button"));
+
+        lBtn.className = "slider__leftBtn";
+        rBtn.className = "slider__rightBtn";
+
+        lBtn.textContent = "◀";
+        rBtn.textContent = "▶";
+
+        const index = this._element.appendChild(document.createElement("div"));
+        index.className = "slider__index";
+
+        const slider = this;
+
+        for(let i = 0; i < this._numPhotos; i++) {
+            let x = index.appendChild(document.createElement("p"))
+            x.className = "slider__index__point";
+            x.textContent = "•";
+            x.addEventListener("click", function() {
+                index.children[slider._currentPhoto].className = "slider__index__point";
+                slider.clickPhoto(i);
+                index.children[slider._currentPhoto].className = "slider__index__point selected";
+            });
+        }
+
+        index.children[this._currentPhoto].className = "slider__index__point selected";
+
+        function nextImage(){
+            index.children[slider._currentPhoto].className = "slider__index__point";
+            slider.nextPhoto();
+            index.children[slider._currentPhoto].className = "slider__index__point selected";
+        }
+
+        function previousImage(){
+            index.children[slider._currentPhoto].className = "slider__index__point";
+            slider.previousPhoto();
+            index.children[slider._currentPhoto].className = "slider__index__point selected";
+        }
+
+        lBtn.addEventListener("click", function() {
+            previousImage();
+        });
+
+        rBtn.addEventListener("click", function() {
+            nextImage();
+        });
+
+        setInterval(() => {
+            nextImage();
+        }, 10000);
+
     }
 
     get id() {
@@ -22,20 +74,12 @@ class Slider {
         return this._photos;
     }
 
-    getPhoto(n) {
-        return this._photos[n];
-    }
-
     get numPhotos() {
         return this._photos.length;
     }
 
     get currentPhoto() {
         return this._currentPhoto;
-    }
-
-    addPhoto(newPhoto) {
-        this._photos.push(newPhoto);
     }
 
     hidePhoto(){
@@ -46,9 +90,9 @@ class Slider {
         this._photos[this._currentPhoto].style.display = "block";
     }
 
-    clickPhoto(i){
+    clickPhoto(n){
         this.hidePhoto();
-        this._currentPhoto = i;
+        this._currentPhoto = n;
         this.showPhoto();
     }
 
@@ -67,52 +111,3 @@ class Slider {
 }
 
 const images = new Slider("images");
-
-const lBtn = images.element.appendChild(document.createElement("button"))
-const rBtn = images.element.appendChild(document.createElement("button"))
-
-lBtn.className = "slider__leftBtn";
-rBtn.className = "slider__rightBtn";
-
-lBtn.textContent = "◀";
-rBtn.textContent = "▶";
-
-const index = images.element.appendChild(document.createElement("div"))
-index.className = "slider__index";
-
-for(let i = 0; i < images._numPhotos; i++) {
-    let x = index.appendChild(document.createElement("p"))
-    x.className = "slider__index__point";
-    x.textContent = "•";
-    x.onclick = function() {
-        index.children[images.currentPhoto].className = "slider__index__point";
-        images.clickPhoto(i)
-        index.children[images.currentPhoto].className = "slider__index__point selected";
-    };
-}
-
-index.children[images.currentPhoto].className = "slider__index__point selected";
-
-function nextImage(){
-    index.children[images.currentPhoto].className = "slider__index__point";
-    images.nextPhoto()
-    index.children[images.currentPhoto].className = "slider__index__point selected";
-}
-
-function previousImage(){
-    index.children[images.currentPhoto].className = "slider__index__point";
-    images.nextPhoto()
-    index.children[images.currentPhoto].className = "slider__index__point selected";
-}
-
-lBtn.onclick = function() {
-    previousImage();
-};
-
-rBtn.onclick = function() {
-    nextImage();
-};
-
-setInterval(() => {
-    nextImage();
-}, 10000);

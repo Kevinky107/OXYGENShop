@@ -1,17 +1,18 @@
 // FORM VALIDATION SCRIPT
 
 // Form elements
+const forms = document.getElementsByTagName("form");
 
 const url = 'https://jsonplaceholder.typicode.com/posts';
 const color = "rgb(202, 202, 202)" //default color
 
-function validateForm(e, form) {
-  e.preventDefault();
+function validateForm(event, form) {
 
-  let myForm = document.getElementById(form);
-  let nameForm = myForm.elements[0];
-  let emailForm = myForm.elements[1];
-  let consentForm = myForm.elements[2];
+  event.preventDefault();
+
+  let nameForm = form.elements[0];
+  let emailForm = form.elements[1];
+  let consentForm = form.elements[2];
 
   let ok = true;
   const pattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -20,28 +21,28 @@ function validateForm(e, form) {
   if(nameForm.value.length < 2 || nameForm.value.length > 100)
   {
     ok = false;
-    nameForm.style.borderColor = "red";
+    nameForm.className = "contact__form__input--wrong";
   }
   else
-    nameForm.style.borderColor = color;
+    nameForm.className = "contact__form__input";
 
   //checkbox validation
   if(!consentForm.checked)
   {
     ok = false;
-    consentForm.style.borderColor = "red";
+    consentForm.className = "contact__form__div__check--wrong";
   }
   else
-    consentForm.style.borderColor = color;
+    consentForm.className = "contact__form__div__check";
 
   //email validation
   if(!pattern.test(emailForm.value))
   {
     ok = false
-    emailForm.style.borderColor = "red";
+    emailForm.className = "contact__form__input--wrong";
   }
   else 
-    emailForm.style.borderColor = color;
+    emailForm.className = "contact__form__input";
 
   if(ok)
     uploadForm(nameForm, emailForm);
@@ -61,7 +62,10 @@ function uploadForm(nameForm, emailForm) {
       'Content-type': 'application/json; charset=UTF-8',
     },
   })
-  .catch(error => console.log(error))
-  .then((response) => response.json())
-  .then(window.alert("INFORMATION UPLOADED CORRECTLY 👌"));
+  .then((response) => response.json()).catch(error => console.log(error))
+  .then(window.alert("INFORMATION UPLOADED CORRECTLY 👌"))
+}
+
+for(let i = 0; i < forms.length; i++) {
+  forms.item(i).addEventListener("submit", function(event){validateForm(event, forms.item(i))});
 }

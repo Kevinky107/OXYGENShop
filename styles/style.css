@@ -27,7 +27,7 @@
   list-style-type: none;
   margin-top: 2em;
   font-family: Open Sans;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.3em;
 }
@@ -54,7 +54,7 @@
   width: 100%;
   display: none;
   font-family: Open Sans;
-  font-size: 0.65em;
+  font-size: 0.65rem;
   font-weight: 700;
 }
 .header__ul li {
@@ -111,11 +111,11 @@
   font-family: Raleway;
   font-weight: 500;
   padding-bottom: 0.5em;
-  font-size: 2em;
+  font-size: 2rem;
 }
 .us__sell__h4 {
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding-bottom: 1.6em;
 }
 .us__sell button {
@@ -217,7 +217,7 @@
 .benefits__card h4, .benefits__card--red h4, .benefits__card--aquamarine h4 {
   text-align: left;
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 0.8rem;
   padding-bottom: 0.9em;
   font-family: Open Sans;
 }
@@ -397,7 +397,7 @@
   padding-top: 1.5em;
   font-family: Raleway;
   font-weight: 400;
-  font-size: 2em;
+  font-size: 2rem;
   padding-bottom: 0.6em;
   width: 100%;
   margin-inline: auto;
@@ -415,11 +415,11 @@
   text-align: center;
 }
 .pricing__col1 h3 {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   font-family: Raleway;
 }
 .pricing__col1__offer {
-  font-size: 0.7em;
+  font-size: 0.7rem;
 }
 .pricing__col2 {
   display: inline-block;
@@ -436,7 +436,7 @@
 .pricing__col2 div h4 {
   font-weight: 450;
   margin: 0;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -458,7 +458,7 @@
 .pricing__box h2 {
   color: rgb(255, 92, 119);
   font-weight: 350;
-  font-size: 3em;
+  font-size: 3rem;
 }
 .pricing__box button {
   background-color: rgb(255, 92, 119);
@@ -467,7 +467,7 @@
   color: white;
   padding: 1em;
   padding-inline: 2em;
-  border-radius: 3em;
+  border-radius: 3rem;
   right: 25%;
   left: 25%;
   bottom: -1.7em;
@@ -488,7 +488,7 @@
 .pricing__box--blue h2 {
   color: rgb(92, 168, 255);
   font-weight: 350;
-  font-size: 3em;
+  font-size: 3rem;
 }
 .pricing__box--blue button {
   background-color: rgb(92, 168, 255);
@@ -519,7 +519,7 @@
   display: inline-block;
   color: rgb(123, 224, 177);
   font-weight: 350;
-  font-size: 3em;
+  font-size: 3rem;
 }
 .pricing__box--green button {
   background-color: rgb(123, 224, 177);
@@ -648,7 +648,7 @@
 .contact__title {
   font-family: Raleway;
   font-weight: 400;
-  font-size: 2.6em;
+  font-size: 2.6rem;
   padding-bottom: 0.6em;
   padding-top: 1em;
   margin-right: 4.1em;
@@ -679,15 +679,21 @@
 .contact__form__h4 {
   color: rgb(1, 178, 243);
   font-weight: 700;
-  font-size: 0.7em;
+  font-size: 0.7rem;
   letter-spacing: 0.55em;
   padding-bottom: 1em;
 }
 .contact__form__input {
   border: none;
-  border-bottom: 2px solid rgb(194, 194, 194);
   margin-bottom: 3.5em;
   width: 100%;
+  border-bottom: 2px solid rgb(194, 194, 194);
+}
+.contact__form__input--wrong {
+  border: none;
+  margin-bottom: 3.5em;
+  width: 100%;
+  border-bottom: 2px solid red;
 }
 .contact__form__div {
   position: relative;
@@ -706,23 +712,37 @@
   font: inherit;
   width: 1.15em;
   height: 1.15em;
-  border: 0.1em solid rgb(202, 202, 202);
   border-radius: 0.15em;
   display: grid;
   place-content: center;
+  border: 0.1em solid rgb(202, 202, 202);
 }
-.contact__form__div__check:hover {
+.contact__form__div__check--wrong {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  width: 1.15em;
+  height: 1.15em;
+  border-radius: 0.15em;
+  display: grid;
+  place-content: center;
+  border: 0.1em solid red;
+}
+.contact__form__div__check:hover, .contact__form__div__check--wrong:hover {
   cursor: pointer;
   background-color: #f1f1f1;
 }
-.contact__form__div__check::before {
+.contact__form__div__check::before, .contact__form__div__check--wrong::before {
   content: "";
   width: 0.65em;
   height: 0.65em;
   transform: scale(0);
   box-shadow: inset 1em 1em rgb(92, 168, 255);
 }
-.contact__form__div__check:checked::before {
+.contact__form__div__check:checked::before, .contact__form__div__check--wrong:checked::before {
   transform: scale(1);
   transform-origin: bottom left;
   -webkit-clip-path: polygon(20% 50%, 12% 60%, 40% 100%, 93% 18%, 85% 10%, 40% 80%);
@@ -731,7 +751,7 @@
 .contact__form__div h4 {
   text-align: left;
   padding-left: 3em;
-  font-size: 0.65em;
+  font-size: 0.65rem;
   font-weight: 500;
   color: rgb(155, 155, 155);
 }
@@ -782,7 +802,7 @@ footer h2 {
   color: rgb(1, 178, 243);
 }
 footer h4 {
-  font-size: 0.6em;
+  font-size: 0.6rem;
   font-weight: 500;
   color: rgb(155, 155, 155);
   margin-left: 7%;
@@ -825,7 +845,7 @@ footer div img {
   background-color: rgba(0, 0, 0, 0.397);
   color: rgba(255, 255, 255, 0.651);
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .slider__rightBtn {
   position: absolute;
@@ -841,7 +861,7 @@ footer div img {
   color: rgba(255, 255, 255, 0.651);
   font-weight: 800;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1rem;
 }
 .slider__index {
   display: inline-flex;
@@ -908,7 +928,7 @@ button:hover, input[type=submit] {
   top: 1em;
   background-color: rgb(1, 178, 243);
   color: white;
-  font-size: 1em;
+  font-size: 1rem;
   padding-bottom: 0.4em;
   padding-inline: 0.61em;
   border: none;
@@ -969,7 +989,7 @@ button:hover, input[type=submit] {
     top: auto;
     right: 3em;
     bottom: 3em;
-    font-size: 2em;
+    font-size: 2rem;
     padding-bottom: 0.4em;
     padding-inline: 0.61em;
   }

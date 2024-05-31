@@ -11,18 +11,18 @@ if(localStorage.modal == null) {
 }
 
 //click outside modal (event)
-window.onclick = function(event) {
+window.addEventListener("click", function(event) {
   if (event.target == modal) {
     closeModal();
   }
-}
+});
 
 //escape pressed (event)
-window.onkeydown = function(event) {
-  if (event.keyCode == 27) {
+window.addEventListener("keydown", function(event) {
+  if (event.code == "Escape") {
     closeModal();
   }
-}
+});
 
 function popUp(scrolled) {
 

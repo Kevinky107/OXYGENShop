@@ -14,29 +14,33 @@ const jsonUrl = 'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v
 
 async function changeCoin(money){
 
-  const response = await fetch(jsonUrl);
-  const coins = await response.json();
-  let change;
+  try{
+    const response = await fetch(jsonUrl);
+    const coins = await response.json();
+    let change;
 
-  switch(money) {
-    case 'eur':
-      change = coins.usd.eur;
-      basic.childNodes.item(0).data = `${parseInt(basicM*change)}€`;
-      professional.childNodes.item(0).data = `${parseInt(professionalM*change)}€`;
-      premium.childNodes.item(0).data = `${parseInt(premiumM*change)}€`;
-      break;
-    case 'usd':
-      change = coins.usd.usd;
-      basic.childNodes.item(0).data = `$${parseInt(basicM*change)}`;
-      professional.childNodes.item(0).data = `$${parseInt(professionalM*change)}`;
-      premium.childNodes.item(0).data = `$${parseInt(premiumM*change)}`;
-      break;
-    case 'gbp':
-      change = coins.usd.gbp;
-      basic.childNodes.item(0).data = `£${parseInt(basicM*change)}`;
-      professional.childNodes.item(0).data = `£${parseInt(professionalM*change)}`;
-      premium.childNodes.item(0).data = `£${parseInt(premiumM*change)}`;
-      break;
+    switch(money) {
+      case 'eur':
+        change = coins.usd.eur;
+        basic.childNodes.item(0).data = `${parseInt(basicM*change)}€`;
+        professional.childNodes.item(0).data = `${parseInt(professionalM*change)}€`;
+        premium.childNodes.item(0).data = `${parseInt(premiumM*change)}€`;
+        break;
+      case 'usd':
+        change = coins.usd.usd;
+        basic.childNodes.item(0).data = `$${parseInt(basicM*change)}`;
+        professional.childNodes.item(0).data = `$${parseInt(professionalM*change)}`;
+        premium.childNodes.item(0).data = `$${parseInt(premiumM*change)}`;
+        break;
+      case 'gbp':
+        change = coins.usd.gbp;
+        basic.childNodes.item(0).data = `£${parseInt(basicM*change)}`;
+        professional.childNodes.item(0).data = `£${parseInt(professionalM*change)}`;
+        premium.childNodes.item(0).data = `£${parseInt(premiumM*change)}`;
+        break;
+    }
+  } catch (e) {
+    console.log(e);
   }
 
 }

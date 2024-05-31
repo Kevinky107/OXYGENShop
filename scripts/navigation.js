@@ -7,7 +7,7 @@ let scroller = document.getElementById("scroller");
 let topBtn = document.getElementById("floatBtn");
 
 // Call to the navigation scroll indicator
-window.onscroll = function() {updateScroll()};
+window.addEventListener("scroll", function() {updateScroll()});
 
 
 // Navigation functions

@@ -20,7 +20,7 @@
     &__title
         font-family: Raleway
         font-weight: 400
-        font-size: 2.6em
+        font-size: 2.6rem
         padding-bottom: 0.6em
         padding-top: 1em
         margin-right: 4.1em
@@ -28,7 +28,7 @@
     &__subtitle
         font-weight: 500
         padding-bottom: 2em
-
+    
     &__info
         padding-left: 2.5em
         padding-top: 0.8em
@@ -50,15 +50,22 @@
         &__h4
             color: rgb(1, 178, 243)
             font-weight: 700
-            font-size: 0.7em
+            font-size: 0.7rem
             letter-spacing: 0.55em
             padding-bottom: 1em
 
-        &__input
+        @mixin input 
             border: none
-            border-bottom: 2px solid rgb(194, 194, 194)
             margin-bottom: 3.5em
             width: 100%
+
+        &__input
+            @include input
+            border-bottom: 2px solid rgb(194, 194, 194)
+
+        &__input--wrong
+            @include input
+            border-bottom: 2px solid red
 
         &__div
             position: relative
@@ -68,7 +75,7 @@
                 top: 0.1em
                 position: absolute
 
-            &__check
+            @mixin check
                 -webkit-appearance: none
                 appearance: none
                 background-color: #fff
@@ -77,24 +84,31 @@
                 font: inherit
                 width: 1.15em
                 height: 1.15em
-                border: 0.1em solid rgb(202, 202, 202)
                 border-radius: 0.15em
 
                 display: grid
                 place-content: center
 
-            &__check:hover
+            &__check
+                @include check
+                border: 0.1em solid rgb(202, 202, 202)
+
+            &__check--wrong
+                @include check
+                border: 0.1em solid red
+
+            &__check:hover,&__check--wrong:hover
                 cursor: pointer
                 background-color: #f1f1f1
 
-            &__check::before
+            &__check::before,&__check--wrong::before
                 content: ""
                 width: 0.65em
                 height: 0.65em
                 transform: scale(0)
                 box-shadow: inset 1em 1em rgb(92, 168, 255)
 
-            &__check:checked::before
+            &__check:checked::before,&__check--wrong:checked::before
                 transform: scale(1)
                 transform-origin: bottom left
                 clip-path: polygon(20% 50%, 12% 60%, 40% 100%, 93% 18%, 85% 10%, 40% 80%)
@@ -102,7 +116,7 @@
             h4
                 text-align: left
                 padding-left: 3em
-                font-size: 0.65em
+                font-size: 0.65rem
                 font-weight: 500
                 color: rgb(155, 155, 155)
 
